@@ -107,3 +107,4 @@ C:\Users\stu12\Desktop\CSPJ\p-snake\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\stu12\Desktop\CSPJ\p-snake\bin\Debug\zh-Hant\EntityFramework.resources.dll
 C:\Users\stu12\Desktop\CSPJ\p-snake\obj\Debug\p-snake.csproj.CopyComplete
 C:\Users\stu12\Desktop\CSPJ\p-snake\obj\Debug\p-snake.csproj.AssemblyReference.cache
+C:\Users\stu12\Desktop\CSPJ\p-snake\obj\Debug\p_snake.Tank.resources

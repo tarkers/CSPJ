@@ -24,7 +24,12 @@ namespace p_snake
             frmsnake.Show();
             this.SetVisibleCore(false);
         }
-
+        private void btnTank_Click(object sender, EventArgs e)
+        {
+            Tank frmtank = new Tank();
+            frmtank.Show();
+            this.SetVisibleCore(false);
+        }
         private void btnBlocks_Click(object sender, EventArgs e)
         {
             Blocks frmblocks = new Blocks();
@@ -62,5 +67,6 @@ namespace p_snake
             frmegg.Show();
             this.SetVisibleCore(false);
         }
+
     }
 }

@@ -67,6 +67,7 @@ namespace p_snake
             this.btnTank.TabIndex = 3;
             this.btnTank.Text = "戰車";
             this.btnTank.UseVisualStyleBackColor = true;
+            this.btnTank.Click += new System.EventHandler(this.btnTank_Click);
             // 
             // btnBlocks
             // 
