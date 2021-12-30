@@ -93,8 +93,19 @@ namespace p_snake
             if (missed > 5)
             {
                 GameTimer.Stop();
-                MessageBox.Show("Game Over!" + Environment.NewLine + "We've lost good Eggs!" + Environment.NewLine + "Click ok to retry");
-                RestartGame();
+
+                if(MessageBox.Show("Game Over!" + Environment.NewLine + "We've lost good Eggs!" + Environment.NewLine + "Click retry to strat new game"
+                    +Environment.NewLine+"Click cancel back to Menu", "Info", MessageBoxButtons.RetryCancel) == DialogResult.Retry)
+                {
+                    RestartGame();
+                }
+                else
+                {
+                    Main m = new Main();
+                    m.Show();
+                    this.SetVisibleCore(false);
+                }
+                
             }
 
 

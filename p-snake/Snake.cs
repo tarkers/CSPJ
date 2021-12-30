@@ -32,26 +32,7 @@ namespace p_snake
         int game_mode = 1;
         Random rander = new Random(System.DateTime.Now.Millisecond);
         int score=0;
-        public Snake()
-        {
-            InitializeComponent();
-
-            for (int i = 0; i < GAME_ROW; i++)
-                for (int j = 0; j < GAME_COL; j++)
-                {
-                    grids[i, j] = new Label();
-                    grids[i, j].Width = GRID_WIDTH; grids[i, j].Height = GRID_HEIGHT;
-                    //grids[i, j].BorderStyle = BorderStyle.FixedSingle;
-                    grids[i, j].BackColor = BG_COLOR;
-                    grids[i, j].Left = j * GRID_WIDTH + GAME_POS_X;
-                    grids[i, j].Top = i * GRID_HEIGHT + GAME_POS_Y;
-                    grids[i, j].Visible = true;
-                    this.Controls.Add(grids[i, j]);
-                }
-            gmae_init();          
-            timer1.Enabled = true;
-            btnExit.Visible = false;
-        }
+        
         public Snake(Main parent)
         {
             InitializeComponent();
@@ -70,11 +51,13 @@ namespace p_snake
             gmae_init();
             timer1.Enabled = true;
             btnExit.Visible = false;
+            
         }
 
 
         void gmae_init()
         {
+            timer1.Enabled = true;
             SNAKE_COLOR = Color.White;
             R = G = B = 255;
 
@@ -192,6 +175,7 @@ namespace p_snake
         private void btnNew_Click(object sender, EventArgs e)
         {
             btnNew.Enabled = false; btnNew.Visible = false;
+            btnExit.Enabled = false;btnExit.Visible = false;
             gmae_init();
             timer1.Enabled = true;
         }

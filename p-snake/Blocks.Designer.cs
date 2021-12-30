@@ -63,7 +63,7 @@ namespace p_snake
             this.button1.AutoSize = true;
             this.button1.Enabled = false;
             this.button1.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(736, 544);
+            this.button1.Location = new System.Drawing.Point(737, 560);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 45);
             this.button1.TabIndex = 0;
@@ -87,7 +87,7 @@ namespace p_snake
             // 
             this.label_block_count.AutoSize = true;
             this.label_block_count.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label_block_count.Location = new System.Drawing.Point(756, 310);
+            this.label_block_count.Location = new System.Drawing.Point(770, 326);
             this.label_block_count.Name = "label_block_count";
             this.label_block_count.Size = new System.Drawing.Size(92, 28);
             this.label_block_count.TabIndex = 4;
@@ -97,7 +97,7 @@ namespace p_snake
             // 
             this.label_score.AutoSize = true;
             this.label_score.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label_score.Location = new System.Drawing.Point(768, 370);
+            this.label_score.Location = new System.Drawing.Point(770, 370);
             this.label_score.Name = "label_score";
             this.label_score.Size = new System.Drawing.Size(80, 28);
             this.label_score.TabIndex = 3;
@@ -107,7 +107,7 @@ namespace p_snake
             // 
             this.label_level.AutoSize = true;
             this.label_level.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label_level.Location = new System.Drawing.Point(770, 423);
+            this.label_level.Location = new System.Drawing.Point(770, 413);
             this.label_level.Name = "label_level";
             this.label_level.Size = new System.Drawing.Size(79, 28);
             this.label_level.TabIndex = 2;
@@ -128,7 +128,7 @@ namespace p_snake
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(143, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(613, 30);
             this.label1.TabIndex = 202;
@@ -138,7 +138,7 @@ namespace p_snake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 978);
+            this.ClientSize = new System.Drawing.Size(980, 978);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label_level);
@@ -147,7 +147,7 @@ namespace p_snake
             this.Controls.Add(this.label213);
             this.Controls.Add(this.label_info);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Blocks";
             this.Text = "俄羅斯方塊";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Blocks_FormClosing);
