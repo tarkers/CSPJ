@@ -46,7 +46,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::p_snake.Properties.Resources.pinkBalloon;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 160);
+            this.pictureBox1.Location = new System.Drawing.Point(75, 240);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -58,7 +59,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::p_snake.Properties.Resources.redHeart;
-            this.pictureBox2.Location = new System.Drawing.Point(182, 67);
+            this.pictureBox2.Location = new System.Drawing.Point(273, 100);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(111, 116);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -70,7 +72,8 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::p_snake.Properties.Resources.redStar;
-            this.pictureBox3.Location = new System.Drawing.Point(347, 130);
+            this.pictureBox3.Location = new System.Drawing.Point(520, 195);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(111, 116);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -82,7 +85,8 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::p_snake.Properties.Resources.yellowBalloon;
-            this.pictureBox4.Location = new System.Drawing.Point(358, 303);
+            this.pictureBox4.Location = new System.Drawing.Point(537, 454);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(111, 116);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -94,7 +98,8 @@
             // bomb
             // 
             this.bomb.Image = global::p_snake.Properties.Resources.bomb;
-            this.bomb.Location = new System.Drawing.Point(150, 390);
+            this.bomb.Location = new System.Drawing.Point(225, 585);
+            this.bomb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bomb.Name = "bomb";
             this.bomb.Size = new System.Drawing.Size(100, 98);
             this.bomb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -106,9 +111,10 @@
             // 
             this.txtScore.AutoSize = true;
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtScore.Location = new System.Drawing.Point(13, 12);
+            this.txtScore.Location = new System.Drawing.Point(20, 18);
+            this.txtScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(88, 24);
+            this.txtScore.Size = new System.Drawing.Size(131, 33);
             this.txtScore.TabIndex = 1;
             this.txtScore.Text = "Score: 0";
             // 
@@ -119,18 +125,19 @@
             // 
             // ShootBalloon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(634, 610);
+            this.ClientSize = new System.Drawing.Size(951, 915);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.bomb);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ShootBalloon";
-            this.Text = "Balloon Pop Arcade Game MOO ICT";
+            this.Text = "射氣球";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ShootBalloon_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShootBalloon_FormClosed);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);

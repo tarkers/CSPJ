@@ -18,30 +18,30 @@ namespace p_snake
             Event.main = this;
         }
 
-        private void Snake_Click(object sender, EventArgs e)
+        private void btnSnake_Click(object sender, EventArgs e)
         {
-            Snake s = new Snake(this);
-            s.Show();
+            Snake frmsnake = new Snake(this);
+            frmsnake.Show();
             this.SetVisibleCore(false);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnBlocks_Click(object sender, EventArgs e)
         {
-            Blocks b = new Blocks();
-            b.Show();
+            Blocks frmblocks = new Blocks();
+            frmblocks.Show();
             this.SetVisibleCore(false);
         }
 
         private void btnRanking_Click(object sender, EventArgs e)
         {
-            Ranking r = new Ranking();
-            r.Show();
+            Ranking frmranking = new Ranking();
+            frmranking.Show();
             this.SetVisibleCore(false);
         }
-        private void car_button_Click(object sender, EventArgs e)
+        private void btnCar_Click(object sender, EventArgs e)
         {
-            CarRace carForm = new CarRace();
-            carForm.Show();
+            CarRace frmcar = new CarRace();
+            frmcar.Show();
             this.SetVisibleCore(false);
         }
         public  void BacktoMain()
@@ -49,17 +49,17 @@ namespace p_snake
             this.SetVisibleCore(true);
         }
 
-        private void balloonBtn_Click(object sender, EventArgs e)
+        private void btnBalloon_Click(object sender, EventArgs e)
         {
-            ShootBalloon r = new ShootBalloon();
-            r.Show();
+            ShootBalloon frmballoon = new ShootBalloon();
+            frmballoon.Show();
             this.SetVisibleCore(false);
         }
 
-        private void catchEggBtn_Click(object sender, EventArgs e)
+        private void btnEgg_Click(object sender, EventArgs e)
         {
-            Egg egg = new Egg();
-            egg.Show();
+            Egg frmegg = new Egg();
+            frmegg.Show();
             this.SetVisibleCore(false);
         }
     }

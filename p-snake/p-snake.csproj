@@ -48,8 +48,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -81,6 +90,24 @@
     </Compile>
     <Compile Include="CarRace.Designer.cs">
       <DependentUpon>CarRace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\dbRankingModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbRankingModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\dbRankingModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbRankingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\dbRankingModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbRankingModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\貪吃蛇.cs">
+      <DependentUpon>dbRankingModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ShootBalloon.cs">
       <SubType>Form</SubType>
@@ -139,6 +166,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -148,6 +176,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="Resources\dbRankingModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbRankingModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Resources\dbRankingModel.edmx.diagram">
+      <DependentUpon>dbRankingModel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -173,6 +208,16 @@
     <Content Include="Resources\chicken_hurt.png" />
     <Content Include="Resources\chicken_normal.png" />
     <Content Include="Resources\chicken_normal2.png" />
+    <Content Include="Resources\dbRankingModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>dbRankingModel.Context.cs</LastGenOutput>
+      <DependentUpon>dbRankingModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Resources\dbRankingModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbRankingModel.edmx</DependentUpon>
+      <LastGenOutput>dbRankingModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Resources\egg.png" />
     <Content Include="Resources\explosion.gif" />
     <Content Include="Resources\gold.png" />
@@ -193,6 +238,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

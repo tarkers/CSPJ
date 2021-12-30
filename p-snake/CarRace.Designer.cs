@@ -61,15 +61,17 @@
             this.panel1.Controls.Add(this.player);
             this.panel1.Controls.Add(this.roadTrack2);
             this.panel1.Controls.Add(this.roadTrack1);
-            this.panel1.Location = new System.Drawing.Point(12, 11);
+            this.panel1.Location = new System.Drawing.Point(18, 16);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(475, 479);
+            this.panel1.Size = new System.Drawing.Size(712, 718);
             this.panel1.TabIndex = 0;
             // 
             // AI2
             // 
             this.AI2.Image = global::p_snake.Properties.Resources.carGrey;
-            this.AI2.Location = new System.Drawing.Point(422, 57);
+            this.AI2.Location = new System.Drawing.Point(633, 86);
+            this.AI2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AI2.Name = "AI2";
             this.AI2.Size = new System.Drawing.Size(50, 100);
             this.AI2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -80,7 +82,8 @@
             // AI1
             // 
             this.AI1.Image = global::p_snake.Properties.Resources.carGreen;
-            this.AI1.Location = new System.Drawing.Point(76, 57);
+            this.AI1.Location = new System.Drawing.Point(114, 86);
+            this.AI1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AI1.Name = "AI1";
             this.AI1.Size = new System.Drawing.Size(50, 101);
             this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -91,7 +94,8 @@
             // award
             // 
             this.award.Image = global::p_snake.Properties.Resources.bronze;
-            this.award.Location = new System.Drawing.Point(116, 191);
+            this.award.Location = new System.Drawing.Point(174, 286);
+            this.award.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.award.Name = "award";
             this.award.Size = new System.Drawing.Size(250, 100);
             this.award.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -101,7 +105,8 @@
             // explosion
             // 
             this.explosion.Image = global::p_snake.Properties.Resources.explosion;
-            this.explosion.Location = new System.Drawing.Point(76, 346);
+            this.explosion.Location = new System.Drawing.Point(114, 519);
+            this.explosion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.explosion.Name = "explosion";
             this.explosion.Size = new System.Drawing.Size(64, 64);
             this.explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -111,7 +116,8 @@
             // player
             // 
             this.player.Image = global::p_snake.Properties.Resources.carYellow;
-            this.player.Location = new System.Drawing.Point(215, 371);
+            this.player.Location = new System.Drawing.Point(322, 556);
+            this.player.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(50, 99);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -122,8 +128,9 @@
             // 
             this.roadTrack2.Image = global::p_snake.Properties.Resources.roadTrack;
             this.roadTrack2.Location = new System.Drawing.Point(0, 0);
+            this.roadTrack2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roadTrack2.Name = "roadTrack2";
-            this.roadTrack2.Size = new System.Drawing.Size(475, 479);
+            this.roadTrack2.Size = new System.Drawing.Size(712, 718);
             this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.roadTrack2.TabIndex = 4;
             this.roadTrack2.TabStop = false;
@@ -131,9 +138,10 @@
             // roadTrack1
             // 
             this.roadTrack1.Image = global::p_snake.Properties.Resources.roadTrack;
-            this.roadTrack1.Location = new System.Drawing.Point(0, -479);
+            this.roadTrack1.Location = new System.Drawing.Point(0, -718);
+            this.roadTrack1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roadTrack1.Name = "roadTrack1";
-            this.roadTrack1.Size = new System.Drawing.Size(475, 479);
+            this.roadTrack1.Size = new System.Drawing.Size(712, 718);
             this.roadTrack1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.roadTrack1.TabIndex = 0;
             this.roadTrack1.TabStop = false;
@@ -141,9 +149,10 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(187, 545);
+            this.btnStart.Location = new System.Drawing.Point(280, 818);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(99, 38);
+            this.btnStart.Size = new System.Drawing.Size(148, 57);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -152,9 +161,10 @@
             // txtScore
             // 
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtScore.Location = new System.Drawing.Point(12, 493);
+            this.txtScore.Location = new System.Drawing.Point(18, 740);
+            this.txtScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(475, 34);
+            this.txtScore.Size = new System.Drawing.Size(712, 51);
             this.txtScore.TabIndex = 2;
             this.txtScore.Text = "Score: 0";
             this.txtScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,9 +172,10 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 585);
+            this.label2.Location = new System.Drawing.Point(18, 878);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(475, 127);
+            this.label2.Size = new System.Drawing.Size(712, 190);
             this.label2.TabIndex = 3;
             this.label2.Text = "Press Left and Right to move the car. \r\n\r\nDon\'t hit any other cars in the game an" +
     "d survive as long as you can";
@@ -177,15 +188,16 @@
             // 
             // CarRace
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 721);
+            this.ClientSize = new System.Drawing.Size(748, 1082);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CarRace";
-            this.Text = "Car Racing Game MOO ICT";
+            this.Text = "賽車遊戲";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CarRace_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CarRace_FormClosed);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);

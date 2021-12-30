@@ -46,18 +46,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(12, 88);
+            this.label1.Location = new System.Drawing.Point(18, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 27);
+            this.label1.Size = new System.Drawing.Size(0, 40);
             this.label1.TabIndex = 0;
             // 
             // btnNew
             // 
             this.btnNew.Enabled = false;
             this.btnNew.Font = new System.Drawing.Font("新細明體", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnNew.Location = new System.Drawing.Point(55, 145);
+            this.btnNew.Location = new System.Drawing.Point(82, 218);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(80, 31);
+            this.btnNew.Size = new System.Drawing.Size(120, 46);
             this.btnNew.TabIndex = 1;
             this.btnNew.Text = "New Game";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -68,18 +70,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("新細明體", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(12, 36);
+            this.label2.Location = new System.Drawing.Point(18, 54);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 22);
+            this.label2.Size = new System.Drawing.Size(0, 32);
             this.label2.TabIndex = 2;
             // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnExit.Location = new System.Drawing.Point(64, 197);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Location = new System.Drawing.Point(96, 296);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(58, 27);
+            this.btnExit.Size = new System.Drawing.Size(87, 40);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -87,15 +89,16 @@
             // 
             // Snake
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 431);
+            this.ClientSize = new System.Drawing.Size(1173, 646);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Snake";
-            this.Text = "Form1";
+            this.Text = "貪食蛇";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Snake_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Snake_FormClosed);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

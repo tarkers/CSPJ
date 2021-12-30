@@ -31,14 +31,14 @@ namespace p_snake
         {
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Snake = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSnake = new System.Windows.Forms.Button();
+            this.btnTank = new System.Windows.Forms.Button();
+            this.btnBlocks = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRanking = new System.Windows.Forms.Button();
-            this.car_button = new System.Windows.Forms.Button();
-            this.balloonBtn = new System.Windows.Forms.Button();
-            this.catchEggBtn = new System.Windows.Forms.Button();
+            this.btnCar = new System.Windows.Forms.Button();
+            this.btnBalloon = new System.Windows.Forms.Button();
+            this.btnEgg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -47,117 +47,108 @@ namespace p_snake
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // Snake
+            // btnSnake
             // 
-            this.Snake.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Snake.Location = new System.Drawing.Point(96, 97);
-            this.Snake.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Snake.Name = "Snake";
-            this.Snake.Size = new System.Drawing.Size(88, 39);
-            this.Snake.TabIndex = 2;
-            this.Snake.Text = "貪食蛇";
-            this.Snake.UseVisualStyleBackColor = true;
-            this.Snake.Click += new System.EventHandler(this.Snake_Click);
+            this.btnSnake.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnSnake.Location = new System.Drawing.Point(144, 146);
+            this.btnSnake.Name = "btnSnake";
+            this.btnSnake.Size = new System.Drawing.Size(132, 58);
+            this.btnSnake.TabIndex = 2;
+            this.btnSnake.Text = "貪食蛇";
+            this.btnSnake.UseVisualStyleBackColor = true;
+            this.btnSnake.Click += new System.EventHandler(this.btnSnake_Click);
             // 
-            // button1
+            // btnTank
             // 
-            this.button1.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(194, 97);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 39);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "戰車";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTank.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnTank.Location = new System.Drawing.Point(291, 146);
+            this.btnTank.Name = "btnTank";
+            this.btnTank.Size = new System.Drawing.Size(132, 58);
+            this.btnTank.TabIndex = 3;
+            this.btnTank.Text = "戰車";
+            this.btnTank.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnBlocks
             // 
-            this.button2.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(292, 97);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 39);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "俄羅斯方塊";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnBlocks.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBlocks.Location = new System.Drawing.Point(438, 146);
+            this.btnBlocks.Name = "btnBlocks";
+            this.btnBlocks.Size = new System.Drawing.Size(177, 58);
+            this.btnBlocks.TabIndex = 4;
+            this.btnBlocks.Text = "俄羅斯方塊";
+            this.btnBlocks.UseVisualStyleBackColor = true;
+            this.btnBlocks.Click += new System.EventHandler(this.btnBlocks_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(49, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(74, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 21);
+            this.label1.Size = new System.Drawing.Size(230, 31);
             this.label1.TabIndex = 5;
             this.label1.Text = "請選擇想遊玩的遊戲";
             // 
             // btnRanking
             // 
             this.btnRanking.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRanking.Location = new System.Drawing.Point(194, 213);
-            this.btnRanking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRanking.Location = new System.Drawing.Point(291, 320);
             this.btnRanking.Name = "btnRanking";
-            this.btnRanking.Size = new System.Drawing.Size(96, 29);
+            this.btnRanking.Size = new System.Drawing.Size(144, 44);
             this.btnRanking.TabIndex = 6;
             this.btnRanking.Text = "排行榜";
             this.btnRanking.UseVisualStyleBackColor = true;
             this.btnRanking.Click += new System.EventHandler(this.btnRanking_Click);
             // 
-            // car_button
+            // btnCar
             // 
-            this.car_button.AllowDrop = true;
-            this.car_button.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.car_button.Location = new System.Drawing.Point(96, 158);
-            this.car_button.Margin = new System.Windows.Forms.Padding(2);
-            this.car_button.Name = "car_button";
-            this.car_button.Size = new System.Drawing.Size(118, 39);
-            this.car_button.TabIndex = 7;
-            this.car_button.Text = "賽車遊戲";
-            this.car_button.UseVisualStyleBackColor = true;
-            this.car_button.Click += new System.EventHandler(this.car_button_Click);
+            this.btnCar.AllowDrop = true;
+            this.btnCar.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnCar.Location = new System.Drawing.Point(144, 237);
+            this.btnCar.Name = "btnCar";
+            this.btnCar.Size = new System.Drawing.Size(177, 58);
+            this.btnCar.TabIndex = 7;
+            this.btnCar.Text = "賽車遊戲";
+            this.btnCar.UseVisualStyleBackColor = true;
+            this.btnCar.Click += new System.EventHandler(this.btnCar_Click);
             // 
-            // balloonBtn
+            // btnBalloon
             // 
-            this.balloonBtn.AllowDrop = true;
-            this.balloonBtn.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.balloonBtn.Location = new System.Drawing.Point(218, 158);
-            this.balloonBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.balloonBtn.Name = "balloonBtn";
-            this.balloonBtn.Size = new System.Drawing.Size(118, 39);
-            this.balloonBtn.TabIndex = 8;
-            this.balloonBtn.Text = "射氣球";
-            this.balloonBtn.UseVisualStyleBackColor = true;
-            this.balloonBtn.Click += new System.EventHandler(this.balloonBtn_Click);
+            this.btnBalloon.AllowDrop = true;
+            this.btnBalloon.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBalloon.Location = new System.Drawing.Point(327, 237);
+            this.btnBalloon.Name = "btnBalloon";
+            this.btnBalloon.Size = new System.Drawing.Size(177, 58);
+            this.btnBalloon.TabIndex = 8;
+            this.btnBalloon.Text = "射氣球";
+            this.btnBalloon.UseVisualStyleBackColor = true;
+            this.btnBalloon.Click += new System.EventHandler(this.btnBalloon_Click);
             // 
-            // catchEggBtn
+            // btnEgg
             // 
-            this.catchEggBtn.AllowDrop = true;
-            this.catchEggBtn.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.catchEggBtn.Location = new System.Drawing.Point(340, 158);
-            this.catchEggBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.catchEggBtn.Name = "catchEggBtn";
-            this.catchEggBtn.Size = new System.Drawing.Size(118, 39);
-            this.catchEggBtn.TabIndex = 9;
-            this.catchEggBtn.Text = "接蛋遊戲";
-            this.catchEggBtn.UseVisualStyleBackColor = true;
-            this.catchEggBtn.Click += new System.EventHandler(this.catchEggBtn_Click);
+            this.btnEgg.AllowDrop = true;
+            this.btnEgg.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnEgg.Location = new System.Drawing.Point(510, 237);
+            this.btnEgg.Name = "btnEgg";
+            this.btnEgg.Size = new System.Drawing.Size(177, 58);
+            this.btnEgg.TabIndex = 9;
+            this.btnEgg.Text = "接蛋遊戲";
+            this.btnEgg.UseVisualStyleBackColor = true;
+            this.btnEgg.Click += new System.EventHandler(this.btnEgg_Click);
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 347);
-            this.Controls.Add(this.catchEggBtn);
-            this.Controls.Add(this.balloonBtn);
-            this.Controls.Add(this.car_button);
+            this.ClientSize = new System.Drawing.Size(800, 520);
+            this.Controls.Add(this.btnEgg);
+            this.Controls.Add(this.btnBalloon);
+            this.Controls.Add(this.btnCar);
             this.Controls.Add(this.btnRanking);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Snake);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.btnBlocks);
+            this.Controls.Add(this.btnTank);
+            this.Controls.Add(this.btnSnake);
             this.Name = "Main";
             this.Text = "遊戲工坊";
             this.ResumeLayout(false);
@@ -167,13 +158,13 @@ namespace p_snake
 
         #endregion
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Button Snake;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSnake;
+        private System.Windows.Forms.Button btnTank;
+        private System.Windows.Forms.Button btnBlocks;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRanking;
-        private System.Windows.Forms.Button car_button;
-        private System.Windows.Forms.Button balloonBtn;
-        private System.Windows.Forms.Button catchEggBtn;
+        private System.Windows.Forms.Button btnCar;
+        private System.Windows.Forms.Button btnBalloon;
+        private System.Windows.Forms.Button btnEgg;
     }
 }

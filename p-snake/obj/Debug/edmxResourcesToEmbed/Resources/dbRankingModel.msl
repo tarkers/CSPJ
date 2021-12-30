@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="csfinalModelStoreContainer" CdmEntityContainer="csfinalEntities">
+    <EntitySetMapping Name="貪吃蛇">
+      <EntityTypeMapping TypeName="csfinalModel.貪吃蛇">
+        <MappingFragment StoreEntitySet="貪吃蛇">
+          <ScalarProperty Name="編號" ColumnName="編號" />
+          <ScalarProperty Name="分數" ColumnName="分數" />
+          <ScalarProperty Name="排行" ColumnName="排行" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

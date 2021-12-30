@@ -161,7 +161,7 @@ namespace p_snake
             {   // snake gets the bonus square
                 new_bonus();
                 snake_move += SNAKE_ADD_LENGTH;
-                score += 100;
+                score += 10;
                 label2.Text = "Score:" + score;
                 if (R > 0) { R -= 8; if (R < 0) R = 0; }
                 else { G -= 8; if (G < 0) G = 0; }
