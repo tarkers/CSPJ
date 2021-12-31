@@ -56,8 +56,12 @@ namespace p_snake
                 {
 
                     x.Top += speed;
-
-                    if (x.Top + x.Height > this.ClientSize.Height)
+                    if (player.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        x.Top = randY.Next(80, 500) * -1;
+                        x.Left = randX.Next(15, this.ClientSize.Width - x.Width);
+                        score += 1;
+                    }else if (x.Top + x.Height > this.ClientSize.Height)
                     {
 
                         splash.Image = Properties.Resources.splash;
@@ -68,29 +72,19 @@ namespace p_snake
 
                         this.Controls.Add(splash);
 
-                        x.Top = randY.Next(80, 300) * -1;
-                        x.Left = randX.Next(5, this.ClientSize.Width - x.Width);
+                        x.Top = randY.Next(80, 500) * -1;
+                        x.Left = randX.Next(15, this.ClientSize.Width - x.Width);
                         missed += 1;
                         player.Image = Properties.Resources.chicken_hurt;
 
-                    }
-
-
-                    if (player.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        x.Top = randY.Next(80, 300) * -1;
-                        x.Left = randX.Next(5, this.ClientSize.Width - x.Width);
-                        score += 1;
-                    }
+                    }         
                 }
             }
 
             if (score > 10)
             {
                 speed = 12;
-            }
-
-            if (missed > 5)
+            }else if (missed > 5)
             {
                 GameTimer.Stop();
 
@@ -117,10 +111,12 @@ namespace p_snake
             if (e.KeyCode == Keys.Left)
             {
                 goLeft = true;
+                goRight = false;
             }
             if (e.KeyCode == Keys.Right)
             {
                 goRight = true;
+                goLeft = false;
             }
 
 
@@ -156,12 +152,12 @@ namespace p_snake
             {
                 if (x is PictureBox && (string)x.Tag == "eggs")
                 {
-                    x.Top = randY.Next(80, 300) * -1;
+                    x.Top = randY.Next(80, 500) * -1;
                     x.Left = randX.Next(5, this.ClientSize.Width - x.Width);
                 }
             }
 
-            player.Left = this.ClientSize.Width / 2;
+            player.Left = this.ClientSize.Width / 2 + player.Width/2;
             player.Image = Properties.Resources.chicken_normal;
 
             score = 0;
