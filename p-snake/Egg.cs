@@ -84,11 +84,14 @@ namespace p_snake
             if (score > 10)
             {
                 speed = 12;
-            }else if (missed > 5)
+            }
+            
+            if (missed >= 5)
             {
                 GameTimer.Stop();
+                txtMiss.Text = "Missed: " + missed;
 
-                if(MessageBox.Show("Game Over!" + Environment.NewLine + "We've lost good Eggs!" + Environment.NewLine + "Click retry to strat new game"
+                if (MessageBox.Show("Game Over!" + Environment.NewLine + "We've lost good Eggs!" + Environment.NewLine + "Click retry to strat new game"
                     +Environment.NewLine+"Click cancel back to Menu", "Info", MessageBoxButtons.RetryCancel) == DialogResult.Retry)
                 {
                     RestartGame();

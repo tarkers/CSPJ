@@ -17,6 +17,10 @@ namespace p_snake
             InitializeComponent();
             Event.main = this;
         }
+        private void Main_Load(object sender, EventArgs e)
+        {
+            
+        }
 
         private void btnSnake_Click(object sender, EventArgs e)
         {
@@ -26,8 +30,8 @@ namespace p_snake
         }
         private void btnTank_Click(object sender, EventArgs e)
         {
-            Tank frmtank = new Tank();
-            frmtank.Show();
+            Guess frmguess = new Guess();
+            frmguess.Show();
             this.SetVisibleCore(false);
         }
         private void btnBlocks_Click(object sender, EventArgs e)
@@ -68,5 +72,6 @@ namespace p_snake
             this.SetVisibleCore(false);
         }
 
+        
     }
 }

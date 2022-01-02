@@ -63,6 +63,16 @@ namespace p_snake.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap _780 {
+            get {
+                object obj = ResourceManager.GetObject("780", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap ambulance {
             get {
                 object obj = ResourceManager.GetObject("ambulance", resourceCulture);
@@ -106,6 +116,46 @@ namespace p_snake.Properties {
         internal static System.Drawing.Bitmap bronze1 {
             get {
                 object obj = ResourceManager.GetObject("bronze1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap bullet {
+            get {
+                object obj = ResourceManager.GetObject("bullet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap buttons_PNG167 {
+            get {
+                object obj = ResourceManager.GetObject("buttons_PNG167", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap buttons_PNG1671 {
+            get {
+                object obj = ResourceManager.GetObject("buttons_PNG1671", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap buttons_PNG1672 {
+            get {
+                object obj = ResourceManager.GetObject("buttons_PNG1672", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
