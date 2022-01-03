@@ -8,19 +8,20 @@ using System.Threading.Tasks;
 
 namespace p_snake
 {
+    public class Record
+
+    {
+        public string Name { get; set; }
+        public int Score { get; set; }
+        public int Mode { get; set; }
+    }
 
     static class DB
     {
         static DataSet ds = new DataSet();
         private static string connect_string = @"Data Source=csfinal.database.windows.net;Initial Catalog=csfinal;User ID=csfinal;Password=Annchen135";
 
-        public class Record
-
-        {
-            public string Name { get; set; }
-            public int Score { get; set; }
-            public int Mode { get; set; }
-        }
+       
         //測試獲得所有tableName
         public static void  testConnect()
         {
@@ -34,12 +35,12 @@ namespace p_snake
                         while (reader.Read())
                         {
                             Console.WriteLine((string)reader["TABLE_NAME"]);
-                          //  myComboBox.Items.Add((string)reader["TABLE_NAME"]);
                         }
                     }
                 }
             }
         }
+        //將使用者分數資料存入database
         public static void InsertScore(Record re, string table_name = "接蛋遊戲")
         {
             SqlConnection connection = new SqlConnection(connect_string);
@@ -63,9 +64,10 @@ namespace p_snake
                 connection.Close();
             }
         }
-        public static void GetRecords(string table_name = "接蛋遊戲")
+        //獲得遊戲所有的資料 依照分數降序排列，回傳record list
+        public static List<Record> GetRecords(string table_name = "接蛋遊戲")
         {
-            List<Record> ranklist = new List<Record>();
+            List<Record> record_list = new List<Record>();
             using (SqlConnection connection = new SqlConnection(connect_string))
             {
                 string oString = $"SELECT * FROM {table_name} ORDER BY Score DESC;";
@@ -82,13 +84,14 @@ namespace p_snake
                             Score = (int)oReader["Score"],
                             Mode = (int)oReader["Mode"]
                         };
-                        ranklist.Add(tmp);
-                        Console.WriteLine(tmp.Name + " " + tmp.Score.ToString());
+                        record_list.Add(tmp);                     
+                       Console.WriteLine(tmp.Name + " " + tmp.Score.ToString());
                     }
 
                     connection.Close();
                 }
             }
+            return record_list;
         }
 
     }
