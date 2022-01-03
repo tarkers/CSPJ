@@ -72,8 +72,16 @@ namespace p_snake
             }
             else if(tabControl1.SelectedIndex == 5)
             {
+                List<Record> egg_records = DB.GetRecords(TABLENAME.TEGG);
                 txtEgg.Text = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
-                txtEgg.Text += "--------------------------------------------------------------" + Environment.NewLine;
+                txtEgg.Text += "-------------------------------------------------------------" + Environment.NewLine;
+                int i = 0;
+                foreach (Record re in egg_records)
+                {
+                    Console.WriteLine(i);
+                    i++;
+                    txtEgg.Text += $"\t{re.Id}\t{re.Name}\t{re.Score}\t{i}" + Environment.NewLine;
+                }
             }
             else if(tabControl1.SelectedIndex == 6)
             {

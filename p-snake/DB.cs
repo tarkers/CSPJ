@@ -23,6 +23,7 @@ namespace p_snake
         public string Name { get; set; }
         public int Score { get; set; }
         public int Mode { get; set; }
+        public int Id { get; set; }
         public Record(int score=0 , int mode =0, string name = "user")
         {
             Name = name;
@@ -97,6 +98,7 @@ namespace p_snake
                     {
                         Record tmp = new Record
                         {
+                            Id = (int)oReader["編號"],
                             Name = oReader["姓名"].ToString(),
                             Score = (int)oReader["分數"],
                             Mode = (int)oReader["模式"]
