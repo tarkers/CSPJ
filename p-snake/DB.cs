@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 namespace p_snake
 {
 
-    class DB
+    static class DB
     {
-        DataSet ds = new DataSet();
+        static DataSet ds = new DataSet();
+        private static string connect_string = @"Data Source=csfinal.database.windows.net;Initial Catalog=csfinal;User ID=csfinal;Password=Annchen135";
 
-        private string connect_string = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\bigsh\source\repos\Snake\Snake\record.mdf;Integrated Security=True";
         public class Record
 
         {
@@ -21,7 +21,26 @@ namespace p_snake
             public int Score { get; set; }
             public int Mode { get; set; }
         }
-        public void InsertScore(Record re, string table_name = "Snake")
+        //測試獲得所有tableName
+        public static void  testConnect()
+        {
+            using (SqlConnection con = new SqlConnection(connect_string))
+            {
+                con.Open();
+                using (SqlCommand com = new SqlCommand("SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES", con))
+                {
+                    using (SqlDataReader reader = com.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Console.WriteLine((string)reader["TABLE_NAME"]);
+                          //  myComboBox.Items.Add((string)reader["TABLE_NAME"]);
+                        }
+                    }
+                }
+            }
+        }
+        public static void InsertScore(Record re, string table_name = "接蛋遊戲")
         {
             SqlConnection connection = new SqlConnection(connect_string);
             string query = $"INSERT INTO {table_name} (Name, Score) VALUES(@Name, @Score)";
@@ -44,7 +63,7 @@ namespace p_snake
                 connection.Close();
             }
         }
-        public void GetRecords(string table_name = "Snake")
+        public static void GetRecords(string table_name = "接蛋遊戲")
         {
             List<Record> ranklist = new List<Record>();
             using (SqlConnection connection = new SqlConnection(connect_string))
