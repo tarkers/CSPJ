@@ -11,11 +11,12 @@ namespace p_snake
 
     public static class TABLENAME
     {
-        public static string TT1A2B = "1A2B猜數字";
-        public static string TETRIS = "俄羅斯方塊";
+        public static string T1A2B = "T1A2B猜數字";
+        public static string TTETRIS = "俄羅斯方塊";
         public static string TBALLOON = "射氣球";
         public static string TEGG = "接蛋遊戲";
         public static string TSNAKE = "貪吃蛇";
+        public static string TCAR = "賽車遊戲";
     }
     public class Record
 
@@ -24,7 +25,7 @@ namespace p_snake
         public int Score { get; set; }
         public int Mode { get; set; }
         public int Id { get; set; }
-        public Record(int score=0 , int mode =0, string name = "user")
+        public Record(int score = 0, int mode = 0, string name = "user")
         {
             Name = name;
             Score = score;
@@ -39,9 +40,9 @@ namespace p_snake
         static DataSet ds = new DataSet();
         private static string connect_string = @"Data Source=csfinal.database.windows.net;Initial Catalog=csfinal;User ID=csfinal;Password=Annchen135";
 
-       
+
         //測試獲得所有tableName
-        public static void  testConnect()
+        public static void testConnect()
         {
             using (SqlConnection con = new SqlConnection(connect_string))
             {
@@ -59,7 +60,7 @@ namespace p_snake
             }
         }
         //將使用者分數資料存入database
-        public static void InsertScore(Record re, string table_name )
+        public static void InsertScore(Record re, string table_name)
         {
             SqlConnection connection = new SqlConnection(connect_string);
             string query = $"INSERT INTO {table_name} (姓名,分數,模式) VALUES(@姓名, @分數, @模式)";
@@ -85,7 +86,10 @@ namespace p_snake
         //獲得遊戲所有的資料 依照分數降序排列，回傳record list
         public static List<Record> GetRecords(string table_name)
         {
+            Console.WriteLine(table_name);
+            
             List<Record> record_list = new List<Record>();
+           // return record_list;
             using (SqlConnection connection = new SqlConnection(connect_string))
             {
                 string oString = $"SELECT * FROM {table_name} ORDER BY 分數 DESC;";
@@ -103,8 +107,8 @@ namespace p_snake
                             Score = (int)oReader["分數"],
                             Mode = (int)oReader["模式"]
                         };
-                        record_list.Add(tmp);                     
-                       Console.WriteLine(tmp.Name + " " + tmp.Score.ToString() +" " + tmp.Mode.ToString());
+                        record_list.Add(tmp);
+                        Console.WriteLine(tmp.Name + " " + tmp.Score.ToString() + " " + tmp.Mode.ToString());
                     }
 
                     connection.Close();

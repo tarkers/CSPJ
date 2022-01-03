@@ -36,60 +36,59 @@ namespace p_snake
         private void Ranking_FormClosing(object sender, FormClosingEventArgs e)
         {
             Event.FormClosingCheck(sender, e);
-           
+
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (tabControl1.SelectedIndex == 0)
+            TextBox textbox = null;
+            List<Record> records = new List<Record>();
+            string header = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
+            header += "--------------------------------------------------------------" + Environment.NewLine;
+            switch (tabControl1.SelectedIndex)
             {
-                txtSnake.Text = "\t編號\t姓名\t分數\t排名"+Environment.NewLine;
-                txtSnake.Text += "--------------------------------------------------------------" + Environment.NewLine;
-                //txtSnake.Text += csdb.貪吃蛇.ToList();
-                //txtSnake.Text += csdb.();
+                case 0:
+                    textbox = txtSnake;
+                    records = DB.GetRecords(TABLENAME.TSNAKE);
+                    break;
+                case 1:
+                    textbox = txtBlocks;
+                    records = DB.GetRecords(TABLENAME.TTETRIS);
+                    break;
+                case 2:
+                    textbox = txtGuess;
+                    records = DB.GetRecords(TABLENAME.T1A2B);
+                    break;
+                case 3:
+                    textbox = txtCar;
+                    records = DB.GetRecords(TABLENAME.TCAR);
+                    break;
+                case 4:
+                    textbox = txtBalloon;
+                    records = DB.GetRecords(TABLENAME.TBALLOON);
+                    break;
+                case 5:
+                    textbox = txtEgg;
+                    records = DB.GetRecords(TABLENAME.TEGG);
 
-
+                    break;
+                case 6:
+                    textbox = txtRank;
+                    break;
+                default:
+                    break;
             }
-            else if (tabControl1.SelectedIndex == 1)
+           
+            textbox.Text = header;
+            int i = 0;
+            foreach (Record re in records)
             {
-                txtGuess.Text = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
-                txtGuess.Text += "--------------------------------------------------------------" + Environment.NewLine;
-            }
-            else if(tabControl1.SelectedIndex == 2)
-            {
-                txtBlocks.Text = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
-                txtBlocks.Text += "--------------------------------------------------------------" + Environment.NewLine;
-            }
-            else if(tabControl1.SelectedIndex == 3)
-            {
-                txtCar.Text = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
-                txtCar.Text += "--------------------------------------------------------------" + Environment.NewLine;
-            }
-            else if(tabControl1.SelectedIndex == 4)
-            {
-                txtBalloon.Text = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
-                txtBalloon.Text += "--------------------------------------------------------------" + Environment.NewLine;
-            }
-            else if(tabControl1.SelectedIndex == 5)
-            {
-                List<Record> egg_records = DB.GetRecords(TABLENAME.TEGG);
-                txtEgg.Text = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
-                txtEgg.Text += "-------------------------------------------------------------" + Environment.NewLine;
-                int i = 0;
-                foreach (Record re in egg_records)
-                {
-                    Console.WriteLine(i);
-                    i++;
-                    txtEgg.Text += $"\t{re.Id}\t{re.Name}\t{re.Score}\t{i}" + Environment.NewLine;
-                }
-            }
-            else if(tabControl1.SelectedIndex == 6)
-            {
-                txtRank.Text = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
-                txtRank.Text += "--------------------------------------------------------------" + Environment.NewLine;
+                Console.WriteLine(i);
+                i++;
+                textbox.Text += $"\t{re.Id}\t{re.Name}\t{re.Score}\t{i}" + Environment.NewLine;
             }
         }
 
-        
+
     }
 }
