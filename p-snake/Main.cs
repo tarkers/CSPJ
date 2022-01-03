@@ -12,6 +12,7 @@ namespace p_snake
 {
     public partial class Main : Form
     {
+        private string user_name = "user";
         public Main()
         {
             InitializeComponent();
@@ -19,7 +20,8 @@ namespace p_snake
         }
         private void Main_Load(object sender, EventArgs e)
         {
-            
+            DB.testConnect();
+
         }
 
         private void btnSnake_Click(object sender, EventArgs e)
@@ -53,7 +55,7 @@ namespace p_snake
             frmcar.Show();
             this.SetVisibleCore(false);
         }
-        public  void BacktoMain()
+        public void BacktoMain()
         {
             this.SetVisibleCore(true);
         }
@@ -72,6 +74,9 @@ namespace p_snake
             this.SetVisibleCore(false);
         }
 
-        
+        private void nameCheckB_Click(object sender, EventArgs e)
+        {
+            this.user_name = usertextbox.Text == "" ? "user" : usertextbox.Text;
+        }
     }
 }
