@@ -8,6 +8,15 @@ using System.Threading.Tasks;
 
 namespace p_snake
 {
+
+    public static class TABLENAME
+    {
+        public static string TT1A2B = "1A2B猜數字";
+        public static string TETRIS = "俄羅斯方塊";
+        public static string TBALLOON = "射氣球";
+        public static string TEGG = "接蛋遊戲";
+        public static string TSNAKE = "貪吃蛇";
+    }
     public class Record
 
     {
@@ -18,6 +27,7 @@ namespace p_snake
 
     static class DB
     {
+
         static DataSet ds = new DataSet();
         private static string connect_string = @"Data Source=csfinal.database.windows.net;Initial Catalog=csfinal;User ID=csfinal;Password=Annchen135";
 
@@ -41,7 +51,7 @@ namespace p_snake
             }
         }
         //將使用者分數資料存入database
-        public static void InsertScore(Record re, string table_name = "接蛋遊戲")
+        public static void InsertScore(Record re, string table_name )
         {
             SqlConnection connection = new SqlConnection(connect_string);
             string query = $"INSERT INTO {table_name} (Name, Score) VALUES(@Name, @Score)";
@@ -65,7 +75,7 @@ namespace p_snake
             }
         }
         //獲得遊戲所有的資料 依照分數降序排列，回傳record list
-        public static List<Record> GetRecords(string table_name = "接蛋遊戲")
+        public static List<Record> GetRecords(string table_name)
         {
             List<Record> record_list = new List<Record>();
             using (SqlConnection connection = new SqlConnection(connect_string))
