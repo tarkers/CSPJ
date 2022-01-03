@@ -102,7 +102,7 @@ namespace p_snake
                             Mode = (int)oReader["模式"]
                         };
                         record_list.Add(tmp);                     
-                       Console.WriteLine(tmp.Name + " " + tmp.Score.ToString());
+                       Console.WriteLine(tmp.Name + " " + tmp.Score.ToString() +" " + tmp.Mode.ToString());
                     }
 
                     connection.Close();
