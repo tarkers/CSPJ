@@ -86,21 +86,22 @@ namespace p_snake
                 speed = 12;
             }
             
-            if (missed >= 5)
+            if (missed >= 2)
             {
                 GameTimer.Stop();
                 txtMiss.Text = "Missed: " + missed;
-
-                if (MessageBox.Show("Game Over!" + Environment.NewLine + "We've lost good Eggs!" + Environment.NewLine + "Click retry to strat new game"
-                    +Environment.NewLine+"Click cancel back to Menu", "Info", MessageBoxButtons.RetryCancel) == DialogResult.Retry)
+                if (Event.FormClosingCheck("Game Over!" + Environment.NewLine + "We've lost good Eggs!" + Environment.NewLine + "Click ok to back to menu"
+                    + Environment.NewLine + "Click cancel to restart"))
                 {
-                    RestartGame();
+                    this.Close();
+                    //儲存資料至DB Function
+                    Event.SaveScoreToDB(score, 0, TABLENAME.TEGG);
+                    Event.FormClosed();
+                   
                 }
                 else
                 {
-                    Main m = new Main();
-                    m.Show();
-                    this.SetVisibleCore(false);
+                    RestartGame();
                 }
                 
             }
@@ -140,7 +141,7 @@ namespace p_snake
 
         private void Egg_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Event.FormClosingCheck(sender, e);
+            //Event.FormClosingCheck(sender, e);
         }
 
         private void Egg_FormClosed(object sender, FormClosedEventArgs e)

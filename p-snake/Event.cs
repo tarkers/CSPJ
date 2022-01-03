@@ -11,7 +11,7 @@ namespace p_snake
     {
         public static Main main;
 
-        public static void  FormClosingCheck(object sender, FormClosingEventArgs e)
+        public static void FormClosingCheck(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("結束嗎?", "結束", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
             {
@@ -20,9 +20,19 @@ namespace p_snake
 
             }
         }
-        public static void  FormClosed()
+        public static bool FormClosingCheck(string text = "結束嗎?")
+        {
+            return MessageBox.Show(text, "結束", MessageBoxButtons.OKCancel) == DialogResult.Cancel ? false : true;
+        }
+        public static void FormClosed()
         {
             main.BacktoMain();
+        }
+        public static void SaveScoreToDB(int score,int mode, string table)
+        {
+            Record record = new Record(score, mode);
+            record.Name = main.user_name;
+            DB.InsertScore(record, table);
         }
     }
 }

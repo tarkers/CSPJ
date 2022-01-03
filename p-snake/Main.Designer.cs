@@ -41,7 +41,7 @@ namespace p_snake
             this.btnSnake = new System.Windows.Forms.Button();
             this.usertextbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.userHelloT = new System.Windows.Forms.Label();
             this.nameCheckB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -188,17 +188,17 @@ namespace p_snake
             this.label2.TabIndex = 11;
             this.label2.Text = "請選擇想遊玩的遊戲";
             // 
-            // label3
+            // userHelloT
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("微軟正黑體", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(64, 121);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 25);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "user您好:";
+            this.userHelloT.AutoSize = true;
+            this.userHelloT.Font = new System.Drawing.Font("微軟正黑體", 15F, System.Drawing.FontStyle.Bold);
+            this.userHelloT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.userHelloT.Location = new System.Drawing.Point(64, 121);
+            this.userHelloT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userHelloT.Name = "userHelloT";
+            this.userHelloT.Size = new System.Drawing.Size(98, 25);
+            this.userHelloT.TabIndex = 12;
+            this.userHelloT.Text = "user您好:";
             // 
             // nameCheckB
             // 
@@ -222,7 +222,7 @@ namespace p_snake
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(552, 347);
             this.Controls.Add(this.nameCheckB);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.userHelloT);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.usertextbox);
             this.Controls.Add(this.btnEgg);
@@ -254,7 +254,7 @@ namespace p_snake
         private System.Windows.Forms.Button btnEgg;
         private System.Windows.Forms.TextBox usertextbox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label userHelloT;
         private System.Windows.Forms.Button nameCheckB;
     }
 }

@@ -23,6 +23,13 @@ namespace p_snake
         public string Name { get; set; }
         public int Score { get; set; }
         public int Mode { get; set; }
+        public Record(int score=0 , int mode =0, string name = "user")
+        {
+            Name = name;
+            Score = score;
+            Mode = mode;
+        }
+
     }
 
     static class DB
@@ -54,11 +61,11 @@ namespace p_snake
         public static void InsertScore(Record re, string table_name )
         {
             SqlConnection connection = new SqlConnection(connect_string);
-            string query = $"INSERT INTO {table_name} (Name, Score) VALUES(@Name, @Score)";
+            string query = $"INSERT INTO {table_name} (姓名,分數,模式) VALUES(@姓名, @分數, @模式)";
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@Name", re.Name);
-            command.Parameters.AddWithValue("@Score", re.Score);
-            command.Parameters.AddWithValue("@Score", re.Mode);
+            command.Parameters.AddWithValue("@姓名", re.Name);
+            command.Parameters.AddWithValue("@分數", re.Score);
+            command.Parameters.AddWithValue("@模式", re.Mode);
             try
             {
                 connection.Open();
@@ -80,7 +87,7 @@ namespace p_snake
             List<Record> record_list = new List<Record>();
             using (SqlConnection connection = new SqlConnection(connect_string))
             {
-                string oString = $"SELECT * FROM {table_name} ORDER BY Score DESC;";
+                string oString = $"SELECT * FROM {table_name} ORDER BY 分數 DESC;";
                 SqlCommand oCmd = new SqlCommand(oString, connection);
                 connection.Open();
                 using (SqlDataReader oReader = oCmd.ExecuteReader())
@@ -90,9 +97,9 @@ namespace p_snake
                     {
                         Record tmp = new Record
                         {
-                            Name = oReader["Name"].ToString(),
-                            Score = (int)oReader["Score"],
-                            Mode = (int)oReader["Mode"]
+                            Name = oReader["姓名"].ToString(),
+                            Score = (int)oReader["分數"],
+                            Mode = (int)oReader["模式"]
                         };
                         record_list.Add(tmp);                     
                        Console.WriteLine(tmp.Name + " " + tmp.Score.ToString());

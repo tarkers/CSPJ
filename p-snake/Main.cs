@@ -12,7 +12,7 @@ namespace p_snake
 {
     public partial class Main : Form
     {
-        private string user_name = "user";
+        public string user_name = "user";
         public Main()
         {
             InitializeComponent();
@@ -76,7 +76,9 @@ namespace p_snake
 
         private void nameCheckB_Click(object sender, EventArgs e)
         {
+           
             this.user_name = usertextbox.Text == "" ? "user" : usertextbox.Text;
+            userHelloT.Text = $"{usertextbox.Text} 您好:";
         }
     }
 }
