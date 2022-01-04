@@ -33,6 +33,7 @@ namespace p_snake
         public Blocks()
         {
             InitializeComponent();
+            label1.Text = "上為轉換方向，左右控制落下位置，下控制落下速度，空白鍵快速降落";
             block_type = (uint)rander.Next(0, 7) + 1;
             block_type_pre = block_type;
             block_type_next = block_type;
@@ -888,7 +889,10 @@ namespace p_snake
 
             if (e.KeyCode == Keys.Down)
                 timer1.Interval = 15;
-
+            if (e.KeyCode == Keys.Space)
+            {
+                timer1.Interval = 3;
+            }
             if (block_changed)
             {
                 erase_block(block_row_pre, block_col_pre, block_type_pre);

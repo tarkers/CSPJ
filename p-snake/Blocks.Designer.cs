@@ -136,9 +136,8 @@ namespace p_snake
             this.label1.Location = new System.Drawing.Point(95, 6);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(377, 20);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 202;
-            this.label1.Text = "上為轉換方向，左右控制落下位置，下控制落下速度";
             // 
             // Blocks
             // 
