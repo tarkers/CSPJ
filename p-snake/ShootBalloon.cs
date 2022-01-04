@@ -33,7 +33,7 @@ namespace p_snake
             if (gameOver == true)
             {
                 gameTimer.Stop();
-                txtScore.Text = "Score: " + score + " Game over, press enter to restart!";
+                txtScore.Text = "Score: " + score + " Game over, press enter to restart!\n Press esc to go back to main page";
             }
 
             foreach (Control x in this.Controls)
@@ -112,10 +112,22 @@ namespace p_snake
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter && gameOver == true)
+            if (  gameOver == true)
             {
-                RestartGame();
+                if (e.KeyCode == Keys.Enter)
+                {
+                    RestartGame();
+                }
+                else if (e.KeyCode == Keys.Escape)
+                {
+                    this.Close();
+                    //儲存資料至DB Function
+                    Event.SaveScoreToDB(score, 0, TABLENAME.TBALLOON);
+                    Event.FormClosed();
+                }
+
             }
+         
         }
 
         private void RestartGame()
@@ -140,7 +152,7 @@ namespace p_snake
 
         private void ShootBalloon_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Event.FormClosingCheck(sender, e);
+          //  Event.FormClosingCheck(sender, e);
         }
 
         private void ShootBalloon_FormClosed(object sender, FormClosedEventArgs e)

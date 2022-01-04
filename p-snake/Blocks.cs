@@ -844,6 +844,7 @@ namespace p_snake
             }
 
             if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right)
             {
                 if (x_direction(block_type, block_row, block_col, 1))
                 {
@@ -852,7 +853,7 @@ namespace p_snake
                 }
             }
 
-            if (e.KeyCode == Keys.Space)
+            if (e.KeyCode == Keys.Up)
             {
                 block_type_pre = block_type;
                 block_col_pre = block_col; block_row_pre = block_row;
@@ -922,14 +923,19 @@ namespace p_snake
             btnExit.Enabled = false;
             //gmae_init();
             //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
+            if (Event.FormClosingCheck("結束嗎? Click ok to back to menu"))
+            {
+                this.Close();
+                //儲存資料至DB Function
+                Event.SaveScoreToDB((int)score, 0, TABLENAME.TTETRIS);
+                Event.FormClosed();
+
+            }
         }
 
         private void Blocks_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Event.FormClosingCheck(sender, e);
+         //   Event.FormClosingCheck(sender, e);
         }
 
         private void Blocks_FormClosed(object sender, FormClosedEventArgs e)

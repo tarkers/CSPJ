@@ -21,7 +21,7 @@ namespace p_snake
         private void Main_Load(object sender, EventArgs e)
         {
             DB.testConnect();
-
+         //   DB.GetRecords(TABLENAME.TEGG);
         }
 
         private void btnSnake_Click(object sender, EventArgs e)

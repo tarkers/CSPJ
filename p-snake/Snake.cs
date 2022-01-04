@@ -82,7 +82,7 @@ namespace p_snake
 
         private void Snake_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Event.FormClosingCheck(sender,e);
+           // Event.FormClosingCheck(sender,e);
         }
 
         private void Snake_FormClosed(object sender, FormClosedEventArgs e)
@@ -159,7 +159,15 @@ namespace p_snake
                 label1.Text = "Game Over";                
                 btnNew.Enabled = true; btnNew.Visible = true;
                 btnExit.Enabled = true; btnExit.Visible = true;
-                
+                if (Event.FormClosingCheck("Game Over!" +  Environment.NewLine + "Click ok to back to menu"
+                   + Environment.NewLine + "Click cancel to restart"))
+                {
+                    this.Close();
+                    //儲存資料至DB Function
+                    Event.SaveScoreToDB(score, 0, TABLENAME.TSNAKE);
+                    Event.FormClosed();
+
+                }
                 return; 
             }
             //---------------  snake tail update -------------------------------------- 

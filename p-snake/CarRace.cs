@@ -28,7 +28,7 @@ namespace p_snake
         public CarRace()
         {
             InitializeComponent();
-            ResetGame();
+            RestartGame();
         }
 
         private void keyisdown(object sender, KeyEventArgs e)
@@ -191,12 +191,24 @@ namespace p_snake
 
             btnStart.Enabled = true;
 
+            if (Event.FormClosingCheck("Game Over!" + Environment.NewLine  + "Click ok to back to menu"
+                  + Environment.NewLine + "Click cancel to restart"))
+            {
+                this.Close();
+                //儲存資料至DB Function
+                Event.SaveScoreToDB(score, 0, TABLENAME.TCAR);
+                Event.FormClosed();
 
+            }
+            else
+            {
+                RestartGame();
+            }
 
 
         }
 
-        private void ResetGame()
+        private void RestartGame()
         {
 
             btnStart.Enabled = false;
@@ -224,7 +236,7 @@ namespace p_snake
 
         private void restartGame(object sender, EventArgs e)
         {
-            ResetGame();
+            RestartGame();
         }
 
         private void CarRace_FormClosed(object sender, FormClosedEventArgs e)
@@ -234,7 +246,7 @@ namespace p_snake
 
         private void CarRace_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Event.FormClosingCheck(sender, e);
+           // Event.FormClosingCheck(sender, e);
         }
 
         private void playSound()

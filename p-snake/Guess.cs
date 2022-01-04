@@ -15,11 +15,12 @@ namespace p_snake
         private int[] ans = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };//正確答案
         private String[] gnum = new string[10];//猜的答案數字
         private int tmp, r;
+        private int score = 0;
         private Random ran = new Random();
         public Guess()
         {
             InitializeComponent();
-
+            random_Num();
         }
         private void Guess_Load(object sender, EventArgs e)
         {
@@ -51,6 +52,7 @@ namespace p_snake
                 {
                     for (int k = 1; k <= 4; k++)
                     {
+                        Console.WriteLine(ans[k]);
                         for (int l = 1; l <= 4; l++)
                         {
                             if (gnum[k] == ans[l].ToString())
@@ -68,6 +70,8 @@ namespace p_snake
                     }
                     textBox2.Text += num + "-----" + a.ToString() + "A" + b.ToString() + "B" + "\r\n";
                     label3.Text = "第" + (textBox2.Lines.Length - 1) + "猜";
+                    score = 0 - (textBox2.Lines.Length - 1);
+                    Console.WriteLine(score);
                     textBox1.Focus();
                     textBox1.SelectAll();
                 }
@@ -102,9 +106,21 @@ namespace p_snake
             btnExit.Enabled = false;
             //gmae_init();
             //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
+            if (Event.FormClosingCheck("確定返回?" + Environment.NewLine + "Click ok to back to menu"
+                   + Environment.NewLine + "Click cancel to restart"))
+            {
+                this.Close();
+                if(button1.Enabled == false)
+                {
+                    //儲存資料至DB Function
+                    Console.WriteLine(score);
+                    Event.SaveScoreToDB(score, 0, TABLENAME.T1A2B);
+                    Event.FormClosed();
+                }
+             
+
+            }
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -114,16 +130,21 @@ namespace p_snake
             textBox1.Text = "";
             textBox2.Text = "";
             button1.Enabled = true;
+            random_Num();
+            for (int j = 1; j <= 4; j++)
+            {
+                gnum[j] = "";
+            }
+        }
+        private void random_Num()
+        {
             for (int i = 0; i < 10; i++)
             {
                 r = ran.Next(0, 10 - i);
                 tmp = ans[r];
                 ans[r] = ans[9 - i];
                 ans[9 - i] = tmp;
-            }
-            for (int j = 1; j <= 4; j++)
-            {
-                gnum[j] = "";
+               
             }
         }
 
