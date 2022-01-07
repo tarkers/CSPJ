@@ -43,8 +43,8 @@ namespace p_snake
         {
             TextBox textbox = null;
             List<Record> records = new List<Record>();
-            string header = "\t編號\t姓名\t分數\t排名" + Environment.NewLine;
-            header += "-------------------------------------------------------------" + Environment.NewLine;
+            string header = "\t  姓名\t分數\t排名" + Environment.NewLine;
+            header += "------------------------------------------------------" + Environment.NewLine;
             switch (tabControl1.SelectedIndex)
             {
                 case 0:
@@ -85,7 +85,7 @@ namespace p_snake
             {
                 Console.WriteLine(i);
                 i++;
-                textbox.Text += $"\t{re.Id}\t{re.Name}\t{re.Score}\t{i}" + Environment.NewLine;
+                textbox.Text += $"\t{re.Name}  \t{re.Score}\t{i}" + Environment.NewLine + Environment.NewLine;
             }
         }
 

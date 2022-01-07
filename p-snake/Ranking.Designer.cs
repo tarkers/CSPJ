@@ -86,10 +86,10 @@ namespace p_snake
             // txtSnake
             // 
             this.txtSnake.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtSnake.Location = new System.Drawing.Point(57, 29);
+            this.txtSnake.Location = new System.Drawing.Point(92, 37);
             this.txtSnake.Multiline = true;
             this.txtSnake.Name = "txtSnake";
-            this.txtSnake.Size = new System.Drawing.Size(666, 347);
+            this.txtSnake.Size = new System.Drawing.Size(578, 684);
             this.txtSnake.TabIndex = 0;
             // 
             // tabPage2
@@ -106,10 +106,10 @@ namespace p_snake
             // txtBlocks
             // 
             this.txtBlocks.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtBlocks.Location = new System.Drawing.Point(56, 28);
+            this.txtBlocks.Location = new System.Drawing.Point(92, 37);
             this.txtBlocks.Multiline = true;
             this.txtBlocks.Name = "txtBlocks";
-            this.txtBlocks.Size = new System.Drawing.Size(687, 344);
+            this.txtBlocks.Size = new System.Drawing.Size(578, 684);
             this.txtBlocks.TabIndex = 0;
             // 
             // tabPage3
@@ -125,10 +125,10 @@ namespace p_snake
             // txtGuess
             // 
             this.txtGuess.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtGuess.Location = new System.Drawing.Point(56, 30);
+            this.txtGuess.Location = new System.Drawing.Point(92, 37);
             this.txtGuess.Multiline = true;
             this.txtGuess.Name = "txtGuess";
-            this.txtGuess.Size = new System.Drawing.Size(696, 346);
+            this.txtGuess.Size = new System.Drawing.Size(578, 684);
             this.txtGuess.TabIndex = 0;
             // 
             // tabPage5
@@ -144,10 +144,10 @@ namespace p_snake
             // txtCar
             // 
             this.txtCar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtCar.Location = new System.Drawing.Point(38, 34);
+            this.txtCar.Location = new System.Drawing.Point(92, 37);
             this.txtCar.Multiline = true;
             this.txtCar.Name = "txtCar";
-            this.txtCar.Size = new System.Drawing.Size(690, 332);
+            this.txtCar.Size = new System.Drawing.Size(578, 684);
             this.txtCar.TabIndex = 0;
             // 
             // tabPage6
@@ -163,10 +163,10 @@ namespace p_snake
             // txtBalloon
             // 
             this.txtBalloon.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtBalloon.Location = new System.Drawing.Point(49, 30);
+            this.txtBalloon.Location = new System.Drawing.Point(92, 37);
             this.txtBalloon.Multiline = true;
             this.txtBalloon.Name = "txtBalloon";
-            this.txtBalloon.Size = new System.Drawing.Size(692, 341);
+            this.txtBalloon.Size = new System.Drawing.Size(578, 684);
             this.txtBalloon.TabIndex = 0;
             // 
             // tabPage7
@@ -183,10 +183,10 @@ namespace p_snake
             // txtEgg
             // 
             this.txtEgg.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtEgg.Location = new System.Drawing.Point(61, 26);
+            this.txtEgg.Location = new System.Drawing.Point(92, 37);
             this.txtEgg.Multiline = true;
             this.txtEgg.Name = "txtEgg";
-            this.txtEgg.Size = new System.Drawing.Size(654, 346);
+            this.txtEgg.Size = new System.Drawing.Size(578, 684);
             this.txtEgg.TabIndex = 0;
             // 
             // tabPage4
@@ -201,17 +201,17 @@ namespace p_snake
             // 
             // txtRank
             // 
-            this.txtRank.Location = new System.Drawing.Point(61, 38);
+            this.txtRank.Location = new System.Drawing.Point(92, 37);
             this.txtRank.Multiline = true;
             this.txtRank.Name = "txtRank";
-            this.txtRank.Size = new System.Drawing.Size(661, 325);
+            this.txtRank.Size = new System.Drawing.Size(578, 684);
             this.txtRank.TabIndex = 0;
             // 
             // Ranking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(803, 834);
             this.Controls.Add(this.tabControl1);
             this.Name = "Ranking";
             this.Text = "排行榜";
