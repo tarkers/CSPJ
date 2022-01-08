@@ -33,7 +33,7 @@ namespace p_snake
         public Blocks()
         {
             InitializeComponent();
-            label1.Text = "上為轉換方向，左右控制落下位置，下控制落下速度，空白鍵快速降落";
+            //label1.Text = "上為轉換方向，左右控制落下位置，\n下控制落下速度，空白鍵快速降落";
             block_type = (uint)rander.Next(0, 7) + 1;
             block_type_pre = block_type;
             block_type_next = block_type;
@@ -75,7 +75,7 @@ namespace p_snake
         }
         void init_game()
         {
-            btnExit.Visible = false;
+            btnExit.Visible = false;//RRR
             block_type = (uint)rander.Next(0, 7) + 1;
             block_type_pre = block_type;
             block_row = 20;
@@ -648,6 +648,7 @@ namespace p_snake
                 {
                     label_info.Text = "Game Over!";
                     btnExit.Visible = true;
+                    
                     button1.Visible = true;
                     button1.Enabled = true;
                     timer1.Enabled = false;
@@ -917,7 +918,7 @@ namespace p_snake
         {
             init_game();
             label_info.Text = "";
-            button1.Visible = false;
+            button1.Visible = false;//RRR
             button1.Enabled = false;
             timer1.Enabled = true;
         }

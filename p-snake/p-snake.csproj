@@ -215,6 +215,8 @@
       <DependentUpon>Record.mdf</DependentUpon>
     </Content>
     <None Include="Resources\780.jpg" />
+    <None Include="Resources\300.jpg" />
+    <None Include="Resources\1082070-21041011203217.jpg" />
     <Content Include="Resources\ambulance.png" />
     <Content Include="Resources\bomb.gif" />
     <Content Include="Resources\boom.gif" />
@@ -245,6 +247,7 @@
     <Content Include="Resources\gold.png" />
     <Content Include="Resources\hit.wav" />
     <Content Include="Resources\pinkBalloon.gif" />
+    <None Include="Resources\pngtree-space-game-interstellar-exploration-cosmic-background-image_904317.png" />
     <Content Include="Resources\redHeart.gif" />
     <Content Include="Resources\redStar.gif" />
     <Content Include="Resources\roadTrack.jpg" />

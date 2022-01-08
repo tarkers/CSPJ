@@ -78,7 +78,7 @@ namespace p_snake
         {
            
             this.user_name = usertextbox.Text == "" ? "user" : usertextbox.Text;
-            userHelloT.Text = $"{usertextbox.Text} 您好:";
+            userHelloT.Text = $"{usertextbox.Text} ";
         }
     }
 }

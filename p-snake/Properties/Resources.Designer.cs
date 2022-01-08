@@ -63,6 +63,26 @@ namespace p_snake.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap _1082070_21041011203217 {
+            get {
+                object obj = ResourceManager.GetObject("1082070-21041011203217", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _300 {
+            get {
+                object obj = ResourceManager.GetObject("300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap _780 {
             get {
                 object obj = ResourceManager.GetObject("780", resourceCulture);
@@ -305,6 +325,36 @@ namespace p_snake.Properties {
         internal static System.Drawing.Bitmap pinkBalloon {
             get {
                 object obj = ResourceManager.GetObject("pinkBalloon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_space_game_interstellar_exploration_cosmic_background_image_904317 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-space-game-interstellar-exploration-cosmic-background-image_904317", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_space_game_interstellar_exploration_cosmic_background_image_9043171 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-space-game-interstellar-exploration-cosmic-background-image_9043171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap rank {
+            get {
+                object obj = ResourceManager.GetObject("rank", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

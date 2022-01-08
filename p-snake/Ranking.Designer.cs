@@ -31,26 +31,23 @@ namespace p_snake
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtSnake = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.txtBlocks = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.txtGuess = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.txtCar = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
             this.txtBalloon = new System.Windows.Forms.TextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.txtEgg = new System.Windows.Forms.TextBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.txtRank = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.txtEgg = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -58,7 +55,6 @@ namespace p_snake
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -69,7 +65,6 @@ namespace p_snake
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tabControl1.Location = new System.Drawing.Point(2, 0);
             this.tabControl1.Multiline = true;
@@ -91,8 +86,19 @@ namespace p_snake
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "貪食蛇";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(676, 677);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 44);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Menu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // txtSnake
             // 
+            this.txtSnake.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSnake.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtSnake.Location = new System.Drawing.Point(92, 37);
             this.txtSnake.Multiline = true;
@@ -111,6 +117,16 @@ namespace p_snake
             this.tabPage2.Size = new System.Drawing.Size(65527, 65491);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "俄羅斯方塊";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(676, 677);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 44);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtBlocks
             // 
@@ -132,6 +148,16 @@ namespace p_snake
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "1A2B猜數字";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(676, 677);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(109, 44);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Menu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // txtGuess
             // 
             this.txtGuess.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -152,6 +178,16 @@ namespace p_snake
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "賽車遊戲";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(676, 677);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 44);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Menu";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // txtCar
             // 
             this.txtCar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -171,6 +207,16 @@ namespace p_snake
             this.tabPage6.Size = new System.Drawing.Size(65527, 65491);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "射氣球";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(676, 677);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(109, 44);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Menu";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // txtBalloon
             // 
@@ -193,84 +239,6 @@ namespace p_snake
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "接蛋遊戲";
             // 
-            // txtEgg
-            // 
-            this.txtEgg.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtEgg.Location = new System.Drawing.Point(92, 37);
-            this.txtEgg.Multiline = true;
-            this.txtEgg.Name = "txtEgg";
-            this.txtEgg.Size = new System.Drawing.Size(578, 684);
-            this.txtEgg.TabIndex = 0;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.tabPage4.Controls.Add(this.button7);
-            this.tabPage4.Controls.Add(this.txtRank);
-            this.tabPage4.Location = new System.Drawing.Point(4, 40);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(65527, 65491);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "總排名";
-            // 
-            // txtRank
-            // 
-            this.txtRank.Location = new System.Drawing.Point(92, 37);
-            this.txtRank.Multiline = true;
-            this.txtRank.Name = "txtRank";
-            this.txtRank.Size = new System.Drawing.Size(578, 684);
-            this.txtRank.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(676, 677);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Menu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(676, 677);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 44);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Menu";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(676, 677);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 44);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Menu";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(676, 677);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 44);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Menu";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(676, 677);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 44);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Menu";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(676, 677);
@@ -281,21 +249,21 @@ namespace p_snake
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // txtEgg
             // 
-            this.button7.Location = new System.Drawing.Point(676, 677);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 44);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "Menu";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.txtEgg.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtEgg.Location = new System.Drawing.Point(92, 37);
+            this.txtEgg.Multiline = true;
+            this.txtEgg.Name = "txtEgg";
+            this.txtEgg.Size = new System.Drawing.Size(578, 684);
+            this.txtEgg.TabIndex = 0;
             // 
             // Ranking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 834);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(854, 834);
             this.Controls.Add(this.tabControl1);
             this.Name = "Ranking";
             this.Text = "排行榜";
@@ -315,8 +283,6 @@ namespace p_snake
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -327,7 +293,6 @@ namespace p_snake
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
@@ -337,13 +302,11 @@ namespace p_snake
         private System.Windows.Forms.TextBox txtCar;
         private System.Windows.Forms.TextBox txtBalloon;
         private System.Windows.Forms.TextBox txtEgg;
-        private System.Windows.Forms.TextBox txtRank;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
     }
 }

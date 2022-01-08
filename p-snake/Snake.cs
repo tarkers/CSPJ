@@ -12,8 +12,8 @@ namespace p_snake
 {
     public partial class Snake : Form
     {
-        const int GAME_POS_X = 200, GAME_POS_Y = 20;
-        const int GAME_ROW = 20, GAME_COL = 20;
+        const int GAME_POS_X = 200, GAME_POS_Y = 25;
+        const int GAME_ROW = 28, GAME_COL = 50;
         const int GRID_WIDTH = 20, GRID_HEIGHT = 20;
         const int SNAKE_INIT_LEMGTH = 5;
         const int SNAKE_INIT_ROW = 10;

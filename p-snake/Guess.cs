@@ -116,10 +116,14 @@ namespace p_snake
                     Console.WriteLine(score);
                     Event.SaveScoreToDB(score, 0, TABLENAME.T1A2B);
                     Event.FormClosed();
+                    
                 }
              
 
             }
+            Main m = new Main();
+            m.Show();
+            //this.SetVisibleCore(false);
 
         }
 
@@ -136,6 +140,12 @@ namespace p_snake
                 gnum[j] = "";
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void random_Num()
         {
             for (int i = 0; i < 10; i++)
