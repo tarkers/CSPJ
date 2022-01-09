@@ -67,21 +67,17 @@ namespace p_snake
 
             }
 
-
-            if (score > 5)
-            {
-                speed = 8;
-            }
-
-            if (score > 15 && score < 25)
-            {
-                speed = 12;
-            }
+            this.Speed_mode();
+           
 
 
 
         }
-
+        private void Speed_mode()
+        {
+            speed = (int)Math.Log10(Math.Pow(2, score / 3))+4;
+            Console.WriteLine(speed);
+        }
         private void PopBalloon(object sender, EventArgs e)
         {
             if (gameOver == false)
