@@ -86,11 +86,16 @@ namespace p_snake
 
 
         }
-
+        private void Speed_mode()
+        {
+            speed = (int)Math.Log10(Math.Pow(2, score / 3))+4;
+            Console.WriteLine(speed);
+        }
         private void PopBalloon(object sender, EventArgs e)
         {
             if (gameOver == false)
             {
+                Sound.ShootBalloon(true);
                 var balloon = (PictureBox)sender;
 
                 balloon.Top = rand.Next(750, 1000);
@@ -107,6 +112,7 @@ namespace p_snake
         {
             if (gameOver == false)
             {
+                Sound.ShootBalloon(false);
                 bomb.Image = Properties.Resources.boom;
                 gameOver = true;
             }

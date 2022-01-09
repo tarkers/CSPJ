@@ -281,6 +281,15 @@ namespace p_snake.Properties {
         }
         
         /// <summary>
+        ///   查詢類似 System.IO.MemoryStream 的類型 System.IO.UnmanagedMemoryStream 當地語系化資源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream eat {
+            get {
+                return ResourceManager.GetStream("eat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
         internal static System.Drawing.Bitmap egg {
@@ -297,6 +306,15 @@ namespace p_snake.Properties {
             get {
                 object obj = ResourceManager.GetObject("explosion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 System.IO.MemoryStream 的類型 System.IO.UnmanagedMemoryStream 當地語系化資源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream explosion_sound {
+            get {
+                return ResourceManager.GetStream("explosion_sound", resourceCulture);
             }
         }
         
@@ -414,6 +432,15 @@ namespace p_snake.Properties {
             get {
                 object obj = ResourceManager.GetObject("roadTrack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 System.IO.MemoryStream 的類型 System.IO.UnmanagedMemoryStream 當地語系化資源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream shoot_balloon {
+            get {
+                return ResourceManager.GetStream("shoot_balloon", resourceCulture);
             }
         }
         
