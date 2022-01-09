@@ -25,6 +25,7 @@ namespace p_snake
         //SqlDataAdapter daSnake = new SqlDataAdapter("SELECT TOP5 編號,姓名,分數 FROM 貪吃蛇 ORDER BY 分數 DESC",cn);
         private void Ranking_Load(object sender, EventArgs e)
         {
+            
             TextBox textbox = null;
             List<Record> records = new List<Record>();
             string header = "\t  姓名\t分數\t排名" + Environment.NewLine;
@@ -161,6 +162,8 @@ namespace p_snake
             m.Show();
             this.SetVisibleCore(false);
         }
+
+       
 
         /*private void button7_Click(object sender, EventArgs e)
         {
