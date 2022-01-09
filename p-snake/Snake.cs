@@ -142,6 +142,7 @@ namespace p_snake
 
             if (inside_snake(1, bonus.X, bonus.Y))
             {   // snake gets the bonus square
+                Sound.SnakeEat();
                 new_bonus();
                 snake_move += SNAKE_ADD_LENGTH;
                 score += 10;

@@ -243,6 +243,7 @@
       <DependentUpon>dbRankingModel.edmx</DependentUpon>
       <LastGenOutput>dbRankingModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\eat.wav" />
     <Content Include="Resources\egg.png" />
     <Content Include="Resources\explosion.gif" />
     <None Include="Resources\explosion.wav" />

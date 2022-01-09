@@ -24,9 +24,12 @@ namespace p_snake
         public static void ShootBalloon(bool is_balloon)
         {
             sound_play = is_balloon ? new System.Media.SoundPlayer(Properties.Resources.shoot_balloon) : new System.Media.SoundPlayer(Properties.Resources.explosion_sound);
-
             sound_play.Play();
-
+        }
+        public static void SnakeEat()
+        {
+            sound_play = new System.Media.SoundPlayer(Properties.Resources.eat);
+            sound_play.Play();
         }
     }
 }
