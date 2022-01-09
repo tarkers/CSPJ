@@ -103,67 +103,12 @@ namespace p_snake
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void GoBackMain(object sender, EventArgs e)
         {
-            button1.Enabled = false;
-            //gmae_init();
-            //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
+            Event.FormClosed();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            button2.Enabled = false;
-            //gmae_init();
-            //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            button3.Enabled = false;
-            //gmae_init();
-            //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            button4.Enabled = false;
-            //gmae_init();
-            //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            button5.Enabled = false;
-            //gmae_init();
-            //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            button6.Enabled = false;
-            //gmae_init();
-            //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
-        }
-
-       
 
         /*private void button7_Click(object sender, EventArgs e)
         {
