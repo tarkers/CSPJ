@@ -20,11 +20,7 @@ namespace p_snake
            // System.Media.SoundPlayer sp = new System.Media.SoundPlayer($@"{binPath}\Startup.wav");
             Event.main = this;
         }
-        private void playMouseOver()
-        {
-         
-
-        }
+  
         private void Main_Load(object sender, EventArgs e)
         {
            // DB.testConnect();

@@ -36,6 +36,7 @@
             this.bomb = new System.Windows.Forms.PictureBox();
             this.txtScore = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -45,9 +46,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::p_snake.Properties.Resources.pinkBalloon;
             this.pictureBox1.Location = new System.Drawing.Point(75, 240);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -58,9 +61,11 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Image = global::p_snake.Properties.Resources.redHeart;
             this.pictureBox2.Location = new System.Drawing.Point(273, 100);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(111, 116);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -71,9 +76,11 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox3.Image = global::p_snake.Properties.Resources.redStar;
             this.pictureBox3.Location = new System.Drawing.Point(520, 195);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(111, 116);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -84,9 +91,11 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox4.Image = global::p_snake.Properties.Resources.yellowBalloon;
             this.pictureBox4.Location = new System.Drawing.Point(537, 454);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(111, 116);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -97,9 +106,10 @@
             // 
             // bomb
             // 
-            this.bomb.Image = global::p_snake.Properties.Resources.bomb;
+            this.bomb.BackColor = System.Drawing.Color.Transparent;
+            this.bomb.Image = global::p_snake.Properties.Resources.bomb_new;
             this.bomb.Location = new System.Drawing.Point(225, 585);
-            this.bomb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bomb.Margin = new System.Windows.Forms.Padding(4);
             this.bomb.Name = "bomb";
             this.bomb.Size = new System.Drawing.Size(100, 98);
             this.bomb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -110,7 +120,9 @@
             // txtScore
             // 
             this.txtScore.AutoSize = true;
+            this.txtScore.BackColor = System.Drawing.Color.Transparent;
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtScore.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtScore.Location = new System.Drawing.Point(20, 18);
             this.txtScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtScore.Name = "txtScore";
@@ -123,19 +135,33 @@
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.MainTimerEvent);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(899, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 36);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "遊戲規則\n用滑鼠點擊氣球得到分數\n小心不要點到炸彈!\n準備好了嗎?速度要加快了!";
+            
+            // 
             // ShootBalloon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(951, 915);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1565, 915);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.bomb);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ShootBalloon";
             this.Text = "射氣球";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ShootBalloon_FormClosing);
@@ -160,6 +186,7 @@
         private System.Windows.Forms.PictureBox bomb;
         private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Label label1;
     }
 }
 

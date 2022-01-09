@@ -249,6 +249,11 @@ namespace p_snake
            // Event.FormClosingCheck(sender, e);
         }
 
+        private void CarRace_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void playSound()
         {
             System.Media.SoundPlayer playCrash = new System.Media.SoundPlayer(Properties.Resources.hit);

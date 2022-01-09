@@ -129,22 +129,21 @@ namespace p_snake
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(176, 60);
             this.btnExit.TabIndex = 201;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "Menu";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.AutoSize = true;
-
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(771, 500);
-            this.label1.Text = "上為轉換方向，左右控制落下位置，\n下控制落下速度，空白鍵快速降落";
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 30);
+            this.label1.Size = new System.Drawing.Size(529, 80);
             this.label1.TabIndex = 202;
+            this.label1.Text = "遊戲規則\n上為轉換方向，左右控制落下位置，\n下控制落下速度，空白鍵快速降落";
             // 
             // Blocks
             // 
@@ -152,7 +151,7 @@ namespace p_snake
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::p_snake.Properties.Resources.pngtree_space_game_interstellar_exploration_cosmic_background_image_9043171;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1523, 1064);
+            this.ClientSize = new System.Drawing.Size(1414, 899);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label_level);
@@ -161,7 +160,7 @@ namespace p_snake
             this.Controls.Add(this.label213);
             this.Controls.Add(this.label_info);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Blocks";
             this.Text = "俄羅斯方塊";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

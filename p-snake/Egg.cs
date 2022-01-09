@@ -86,7 +86,7 @@ namespace p_snake
                 speed = 12;
             }
             
-            if (missed >= 2)
+            if (missed >= 5)
             {
                 GameTimer.Stop();
                 txtMiss.Text = "Missed: " + missed;

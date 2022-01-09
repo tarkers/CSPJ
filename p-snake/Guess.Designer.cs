@@ -62,7 +62,7 @@ namespace p_snake
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 45);
             this.button2.TabIndex = 1;
-            this.button2.Text = "看答案";
+            this.button2.Text = "Answer";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -71,11 +71,11 @@ namespace p_snake
             this.button3.AutoSize = true;
             this.button3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button3.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(742, 501);
+            this.button3.Location = new System.Drawing.Point(742, 491);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 42);
             this.button3.TabIndex = 2;
-            this.button3.Text = "重新開始";
+            this.button3.Text = "Again";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -85,7 +85,7 @@ namespace p_snake
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(67, 150);
+            this.label1.Location = new System.Drawing.Point(67, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(244, 31);
             this.label1.TabIndex = 3;
@@ -113,11 +113,13 @@ namespace p_snake
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 16F);
+            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox2.Font = new System.Drawing.Font("微軟正黑體", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.textBox2.Location = new System.Drawing.Point(73, 301);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(504, 393);
+            this.textBox2.Size = new System.Drawing.Size(504, 487);
             this.textBox2.TabIndex = 7;
             // 
             // btnExit
@@ -129,7 +131,7 @@ namespace p_snake
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(132, 46);
             this.btnExit.TabIndex = 8;
-            this.btnExit.Text = "返回主選單";
+            this.btnExit.Text = "Menu";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -137,14 +139,14 @@ namespace p_snake
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(68, 37);
+            this.label2.Location = new System.Drawing.Point(68, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(647, 90);
+            this.label2.Size = new System.Drawing.Size(583, 124);
             this.label2.TabIndex = 9;
-            this.label2.Text = "遊戲規則\n選個 4 位數的數字，這 4 位數中的數字不能重覆。\nA代表猜測的數字中，數字相同且位置也正確的個數。\nB代表猜測的數字中，數字相同但位置不一樣的個數。";
-    
+            this.label2.Text = "遊戲規則\n選個 4 位數的數字，這 4 位數中的數字不能重覆。\nA代表猜測的數字中，數字相同且位置也正確的個數。\nB代表猜測的數字中，數字相同但位置不一樣的個數。" +
+    "";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Guess

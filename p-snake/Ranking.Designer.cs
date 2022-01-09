@@ -263,7 +263,7 @@ namespace p_snake
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(854, 834);
+            this.ClientSize = new System.Drawing.Size(856, 887);
             this.Controls.Add(this.tabControl1);
             this.Name = "Ranking";
             this.Text = "排行榜";

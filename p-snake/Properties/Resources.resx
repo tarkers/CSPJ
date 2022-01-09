@@ -124,11 +124,17 @@
   <data name="bronze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bronze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pinkBalloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pinkBalloon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-space-game-interstellar-exploration-cosmic-background-image_9043171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-space-game-interstellar-exploration-cosmic-background-image_904317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carOrange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngtree-space-game-interstellar-exploration-cosmic-background-image_904317" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-space-game-interstellar-exploration-cosmic-background-image_904317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buttons_PNG1671" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buttons_PNG167.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,11 +154,11 @@
   <data name="hit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="redHeart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redHeart.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tankU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\tankU.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CarRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CarRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tankL_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\tankL_R.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,17 +190,23 @@
   <data name="TruckBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TruckBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="redStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redStar.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="chicken_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chicken_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="explosion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\explosion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ambulance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ambulance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\egg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="press_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\press_button.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mouse_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mouse_over.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chicken_normal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chicken_normal2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,29 +217,26 @@
   <data name="bomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bomb.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carOrange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\egg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="redStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redStar.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="explosion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explosion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TruckWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TruckWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ambulance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ambulance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CarRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="300" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pinkBalloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pinkBalloon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tankL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\tankL.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buttons_PNG167" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buttons_PNG167.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tankD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\tankD.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tankD_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\tankD_R.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,19 +256,13 @@
   <data name="roadTrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roadTrack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="redHeart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redHeart.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tankD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\tankD.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-space-game-interstellar-exploration-cosmic-background-image_9043171" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-space-game-interstellar-exploration-cosmic-background-image_904317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mouse_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mouse_over.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="press_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\press_button.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="bomb_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bomb_new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
