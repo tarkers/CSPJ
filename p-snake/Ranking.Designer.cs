@@ -88,7 +88,7 @@ namespace p_snake
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(676, 677);
+            this.button1.Location = new System.Drawing.Point(709, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 44);
             this.button1.TabIndex = 1;
@@ -120,7 +120,7 @@ namespace p_snake
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(676, 677);
+            this.button2.Location = new System.Drawing.Point(709, 37);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 44);
             this.button2.TabIndex = 1;
@@ -150,7 +150,7 @@ namespace p_snake
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(676, 677);
+            this.button3.Location = new System.Drawing.Point(709, 37);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 44);
             this.button3.TabIndex = 1;
@@ -180,7 +180,7 @@ namespace p_snake
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(676, 677);
+            this.button4.Location = new System.Drawing.Point(709, 37);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 44);
             this.button4.TabIndex = 1;
@@ -210,7 +210,7 @@ namespace p_snake
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(676, 677);
+            this.button5.Location = new System.Drawing.Point(709, 37);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 44);
             this.button5.TabIndex = 1;
@@ -241,7 +241,7 @@ namespace p_snake
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(676, 677);
+            this.button6.Location = new System.Drawing.Point(709, 37);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(109, 44);
             this.button6.TabIndex = 1;
@@ -263,10 +263,13 @@ namespace p_snake
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(856, 887);
+            this.ClientSize = new System.Drawing.Size(878, 1050);
             this.Controls.Add(this.tabControl1);
             this.Name = "Ranking";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "排行榜";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ranking_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ranking_FormClosed);
             this.Load += new System.EventHandler(this.Ranking_Load);
