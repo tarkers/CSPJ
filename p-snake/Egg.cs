@@ -149,6 +149,11 @@ namespace p_snake
             Event.FormClosed();
         }
 
+        private void Egg_Resize(object sender, EventArgs e)
+        {
+            player.Top = this.ClientSize.Height - player.Height;
+        }
+
         private void RestartGame()
         {
 
