@@ -14,11 +14,11 @@ namespace p_snake
     {
 
         bool goLeft, goRight;
-
+        int left_pos = 0;
         int speed = 8;
         int score = 0;
         int missed = 0;
-
+        const int MAXLEN = 400;
         Random randX = new Random();
         Random randY = new Random();
 
@@ -58,8 +58,8 @@ namespace p_snake
                     x.Top += speed;
                     if (player.Bounds.IntersectsWith(x.Bounds))
                     {
-                        x.Top = randY.Next(80, 500) * -1;
-                        x.Left = randX.Next(15, this.ClientSize.Width - x.Width);
+                        x.Top = randY.Next(80, 800) * -1;
+                        x.Left = spawnEgg(x.Width);
                         score += 1;
                     }else if (x.Top + x.Height > this.ClientSize.Height)
                     {
@@ -161,8 +161,10 @@ namespace p_snake
             {
                 if (x is PictureBox && (string)x.Tag == "eggs")
                 {
-                    x.Top = randY.Next(80, 500) * -1;
-                    x.Left = randX.Next(5, this.ClientSize.Width - x.Width);
+                    x.Top = randY.Next(80, 800) * -1;
+
+                    x.Left = spawnEgg(x.Width);
+                    left_pos = x.Left;
                 }
             }
 
@@ -171,7 +173,7 @@ namespace p_snake
 
             score = 0;
             missed = 0;
-            speed = 8;
+            speed = 6;
 
             goLeft = false;
             goRight = false;
@@ -180,6 +182,18 @@ namespace p_snake
 
 
 
+        }
+        private int  spawnEgg(int x_width)
+        {
+            int tmp_pos = randX.Next(5, this.ClientSize.Width - x_width);
+            if (left_pos != 0)
+            {
+                while (Math.Abs(tmp_pos - left_pos) > MAXLEN)
+                {
+                    tmp_pos = randX.Next(5, this.ClientSize.Width - x_width);
+                }
+            }
+            return tmp_pos;
         }
     }
 }
