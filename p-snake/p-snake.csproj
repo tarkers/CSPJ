@@ -220,6 +220,7 @@
     <None Include="Resources\1082070-21041011203217.jpg" />
     <Content Include="Resources\ambulance.png" />
     <Content Include="Resources\bomb.gif" />
+    <None Include="Resources\bomb_new.png" />
     <Content Include="Resources\boom.gif" />
     <Content Include="Resources\bronze.png" />
     <None Include="Resources\buttons_PNG167.png" />

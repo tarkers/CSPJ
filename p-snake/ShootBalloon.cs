@@ -17,7 +17,7 @@ namespace p_snake
         int score;
         Random rand = new Random();
         bool gameOver;
-
+        DialogResult Result;
 
         public ShootBalloon()
         {
@@ -33,7 +33,12 @@ namespace p_snake
             if (gameOver == true)
             {
                 gameTimer.Stop();
-                txtScore.Text = "Score: " + score + " Game over, press enter to restart!\n Press esc to go back to main page";
+                //txtScore.Text = "Score: " + score + " Game over, press enter to restart!\n Press esc to go back to main page";
+                Result=MessageBox.Show(" Game over, press enter to restart!\n Press esc to go back to main page");
+                /*if (Result == DialogResult.OK)
+                {
+                    RestartGame();
+                }*/
             }
 
             foreach (Control x in this.Controls)
@@ -67,8 +72,16 @@ namespace p_snake
 
             }
 
-            this.Speed_mode();
-           
+
+            if (score > 10)
+            {
+                speed = 8;
+            }
+
+            if (score > 15 && score < 25)
+            {
+                speed = 12;
+            }
 
 
 
@@ -112,10 +125,11 @@ namespace p_snake
         {
             if (  gameOver == true)
             {
-                if (e.KeyCode == Keys.Enter)
+                if (e.KeyCode == Keys.Enter )
                 {
                     RestartGame();
                 }
+                
                 else if (e.KeyCode == Keys.Escape)
                 {
                     this.Close();
@@ -156,6 +170,11 @@ namespace p_snake
         private void ShootBalloon_FormClosed(object sender, FormClosedEventArgs e)
         {
             Event.FormClosed();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
