@@ -86,6 +86,7 @@ namespace p_snake
         {
             if (gameOver == false)
             {
+                Sound.ShootBalloon(true);
                 var balloon = (PictureBox)sender;
 
                 balloon.Top = rand.Next(750, 1000);
@@ -102,6 +103,7 @@ namespace p_snake
         {
             if (gameOver == false)
             {
+                Sound.ShootBalloon(false);
                 bomb.Image = Properties.Resources.boom;
                 gameOver = true;
             }

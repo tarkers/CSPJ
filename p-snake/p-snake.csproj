@@ -143,6 +143,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sound.cs" />
     <EmbeddedResource Include="Blocks.resx">
       <DependentUpon>Blocks.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +245,7 @@
     </Content>
     <Content Include="Resources\egg.png" />
     <Content Include="Resources\explosion.gif" />
+    <None Include="Resources\explosion.wav" />
     <Content Include="Resources\gold.png" />
     <Content Include="Resources\hit.wav" />
     <Content Include="Resources\pinkBalloon.gif" />
@@ -251,6 +253,7 @@
     <Content Include="Resources\redHeart.gif" />
     <Content Include="Resources\redStar.gif" />
     <Content Include="Resources\roadTrack.jpg" />
+    <None Include="Resources\shoot_balloon.wav" />
     <Content Include="Resources\silver.png" />
     <Content Include="Resources\splash.png" />
     <Content Include="Resources\TruckBlue.png" />
