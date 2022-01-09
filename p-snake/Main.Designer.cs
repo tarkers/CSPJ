@@ -57,13 +57,15 @@ namespace p_snake
             this.btnTank.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnTank.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTank.Image = global::p_snake.Properties.Resources.buttons_PNG167;
-            this.btnTank.Location = new System.Drawing.Point(844, 424);
+            this.btnTank.Location = new System.Drawing.Point(563, 283);
+            this.btnTank.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTank.Name = "btnTank";
-            this.btnTank.Size = new System.Drawing.Size(200, 60);
+            this.btnTank.Size = new System.Drawing.Size(133, 40);
             this.btnTank.TabIndex = 3;
             this.btnTank.Text = "1A2B猜數字";
             this.btnTank.UseVisualStyleBackColor = true;
             this.btnTank.Click += new System.EventHandler(this.btnTank_Click);
+            this.btnTank.MouseEnter += new System.EventHandler(this.mouseEnter);
             // 
             // btnBlocks
             // 
@@ -71,13 +73,15 @@ namespace p_snake
             this.btnBlocks.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnBlocks.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBlocks.Image = global::p_snake.Properties.Resources.buttons_PNG167;
-            this.btnBlocks.Location = new System.Drawing.Point(1161, 424);
+            this.btnBlocks.Location = new System.Drawing.Point(774, 283);
+            this.btnBlocks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBlocks.Name = "btnBlocks";
-            this.btnBlocks.Size = new System.Drawing.Size(200, 60);
+            this.btnBlocks.Size = new System.Drawing.Size(133, 40);
             this.btnBlocks.TabIndex = 4;
             this.btnBlocks.Text = "俄羅斯方塊";
             this.btnBlocks.UseVisualStyleBackColor = true;
             this.btnBlocks.Click += new System.EventHandler(this.btnBlocks_Click);
+            this.btnBlocks.MouseEnter += new System.EventHandler(this.mouseEnter);
             // 
             // label1
             // 
@@ -85,9 +89,10 @@ namespace p_snake
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(193, 96);
+            this.label1.Location = new System.Drawing.Point(129, 64);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 40);
+            this.label1.Size = new System.Drawing.Size(144, 28);
             this.label1.TabIndex = 5;
             this.label1.Text = "輸入玩家名稱";
             // 
@@ -95,13 +100,15 @@ namespace p_snake
             // 
             this.btnRanking.BackColor = System.Drawing.Color.AliceBlue;
             this.btnRanking.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRanking.Location = new System.Drawing.Point(844, 772);
+            this.btnRanking.Location = new System.Drawing.Point(563, 515);
+            this.btnRanking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRanking.Name = "btnRanking";
-            this.btnRanking.Size = new System.Drawing.Size(200, 60);
+            this.btnRanking.Size = new System.Drawing.Size(133, 40);
             this.btnRanking.TabIndex = 6;
             this.btnRanking.Text = "排行榜";
             this.btnRanking.UseVisualStyleBackColor = false;
             this.btnRanking.Click += new System.EventHandler(this.btnRanking_Click);
+            this.btnRanking.MouseEnter += new System.EventHandler(this.mouseEnter);
             // 
             // btnCar
             // 
@@ -109,13 +116,15 @@ namespace p_snake
             this.btnCar.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnCar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCar.Image = global::p_snake.Properties.Resources.buttons_PNG167;
-            this.btnCar.Location = new System.Drawing.Point(516, 571);
+            this.btnCar.Location = new System.Drawing.Point(344, 381);
+            this.btnCar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCar.Name = "btnCar";
-            this.btnCar.Size = new System.Drawing.Size(200, 60);
+            this.btnCar.Size = new System.Drawing.Size(133, 40);
             this.btnCar.TabIndex = 7;
             this.btnCar.Text = "賽車遊戲";
             this.btnCar.UseVisualStyleBackColor = true;
             this.btnCar.Click += new System.EventHandler(this.btnCar_Click);
+            this.btnCar.MouseEnter += new System.EventHandler(this.mouseEnter);
             // 
             // btnBalloon
             // 
@@ -123,13 +132,15 @@ namespace p_snake
             this.btnBalloon.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnBalloon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBalloon.Image = global::p_snake.Properties.Resources.buttons_PNG167;
-            this.btnBalloon.Location = new System.Drawing.Point(844, 571);
+            this.btnBalloon.Location = new System.Drawing.Point(563, 381);
+            this.btnBalloon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBalloon.Name = "btnBalloon";
-            this.btnBalloon.Size = new System.Drawing.Size(200, 60);
+            this.btnBalloon.Size = new System.Drawing.Size(133, 40);
             this.btnBalloon.TabIndex = 8;
             this.btnBalloon.Text = "射氣球";
             this.btnBalloon.UseVisualStyleBackColor = true;
             this.btnBalloon.Click += new System.EventHandler(this.btnBalloon_Click);
+            this.btnBalloon.MouseEnter += new System.EventHandler(this.mouseEnter);
             // 
             // btnEgg
             // 
@@ -137,13 +148,15 @@ namespace p_snake
             this.btnEgg.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnEgg.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEgg.Image = global::p_snake.Properties.Resources.buttons_PNG167;
-            this.btnEgg.Location = new System.Drawing.Point(1161, 571);
+            this.btnEgg.Location = new System.Drawing.Point(774, 381);
+            this.btnEgg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEgg.Name = "btnEgg";
-            this.btnEgg.Size = new System.Drawing.Size(200, 60);
+            this.btnEgg.Size = new System.Drawing.Size(133, 40);
             this.btnEgg.TabIndex = 9;
             this.btnEgg.Text = "接蛋遊戲";
             this.btnEgg.UseVisualStyleBackColor = true;
             this.btnEgg.Click += new System.EventHandler(this.btnEgg_Click);
+            this.btnEgg.MouseEnter += new System.EventHandler(this.mouseEnter);
             // 
             // btnSnake
             // 
@@ -151,23 +164,24 @@ namespace p_snake
             this.btnSnake.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSnake.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSnake.Image = global::p_snake.Properties.Resources.buttons_PNG167;
-            this.btnSnake.Location = new System.Drawing.Point(516, 424);
+            this.btnSnake.Location = new System.Drawing.Point(344, 283);
+            this.btnSnake.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSnake.Name = "btnSnake";
-            this.btnSnake.Size = new System.Drawing.Size(200, 60);
+            this.btnSnake.Size = new System.Drawing.Size(133, 40);
             this.btnSnake.TabIndex = 2;
             this.btnSnake.Text = "貪食蛇";
             this.btnSnake.UseVisualStyleBackColor = true;
             this.btnSnake.Click += new System.EventHandler(this.btnSnake_Click);
+            this.btnSnake.MouseEnter += new System.EventHandler(this.mouseEnter);
             // 
             // usertextbox
             // 
             this.usertextbox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.usertextbox.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.usertextbox.ForeColor = System.Drawing.SystemColors.Window;
-            this.usertextbox.Location = new System.Drawing.Point(411, 89);
-            this.usertextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.usertextbox.Location = new System.Drawing.Point(274, 59);
             this.usertextbox.Name = "usertextbox";
-            this.usertextbox.Size = new System.Drawing.Size(290, 55);
+            this.usertextbox.Size = new System.Drawing.Size(195, 39);
             this.usertextbox.TabIndex = 10;
             // 
             // label2
@@ -176,9 +190,10 @@ namespace p_snake
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(403, 196);
+            this.label2.Location = new System.Drawing.Point(269, 131);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(425, 46);
+            this.label2.Size = new System.Drawing.Size(284, 31);
             this.label2.TabIndex = 11;
             this.label2.Text = "您好:請選擇想遊玩的遊戲";
             // 
@@ -188,9 +203,10 @@ namespace p_snake
             this.userHelloT.BackColor = System.Drawing.Color.Transparent;
             this.userHelloT.Font = new System.Drawing.Font("微軟正黑體", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.userHelloT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.userHelloT.Location = new System.Drawing.Point(319, 196);
+            this.userHelloT.Location = new System.Drawing.Point(213, 131);
+            this.userHelloT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.userHelloT.Name = "userHelloT";
-            this.userHelloT.Size = new System.Drawing.Size(83, 40);
+            this.userHelloT.Size = new System.Drawing.Size(58, 28);
             this.userHelloT.TabIndex = 12;
             this.userHelloT.Text = "user";
             // 
@@ -200,9 +216,10 @@ namespace p_snake
             this.nameCheckB.Font = new System.Drawing.Font("微軟正黑體", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.nameCheckB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.nameCheckB.Image = global::p_snake.Properties.Resources.buttons_PNG167;
-            this.nameCheckB.Location = new System.Drawing.Point(721, 88);
+            this.nameCheckB.Location = new System.Drawing.Point(481, 59);
+            this.nameCheckB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameCheckB.Name = "nameCheckB";
-            this.nameCheckB.Size = new System.Drawing.Size(104, 60);
+            this.nameCheckB.Size = new System.Drawing.Size(69, 40);
             this.nameCheckB.TabIndex = 13;
             this.nameCheckB.Text = "確認";
             this.nameCheckB.UseVisualStyleBackColor = true;
@@ -210,12 +227,12 @@ namespace p_snake
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::p_snake.Properties.Resources._1082070_21041011203217;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1742, 1013);
+            this.ClientSize = new System.Drawing.Size(1161, 675);
             this.Controls.Add(this.nameCheckB);
             this.Controls.Add(this.userHelloT);
             this.Controls.Add(this.label2);
@@ -228,6 +245,7 @@ namespace p_snake
             this.Controls.Add(this.btnBlocks);
             this.Controls.Add(this.btnTank);
             this.Controls.Add(this.btnSnake);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Main";
             this.Text = "遊戲工坊";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

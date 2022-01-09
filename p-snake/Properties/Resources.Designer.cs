@@ -320,6 +320,15 @@ namespace p_snake.Properties {
         }
         
         /// <summary>
+        ///   查詢類似 System.IO.MemoryStream 的類型 System.IO.UnmanagedMemoryStream 當地語系化資源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream mouse_over {
+            get {
+                return ResourceManager.GetStream("mouse_over", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
         internal static System.Drawing.Bitmap pinkBalloon {
@@ -346,6 +355,15 @@ namespace p_snake.Properties {
             get {
                 object obj = ResourceManager.GetObject("pngtree-space-game-interstellar-exploration-cosmic-background-image_9043171", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 System.IO.MemoryStream 的類型 System.IO.UnmanagedMemoryStream 當地語系化資源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream press_button {
+            get {
+                return ResourceManager.GetStream("press_button", resourceCulture);
             }
         }
         
