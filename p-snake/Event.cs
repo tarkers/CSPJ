@@ -26,6 +26,7 @@ namespace p_snake
         }
         public static void FormClosed()
         {
+            Sound.SetBackgroundVolume(80);
             main.BacktoMain();
         }
         public static void SaveScoreToDB(int score,int mode, string table)

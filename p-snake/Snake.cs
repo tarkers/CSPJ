@@ -33,7 +33,7 @@ namespace p_snake
         Random rander = new Random(System.DateTime.Now.Millisecond);
         int score=0;
         
-        public Snake(Main parent)
+        public Snake()
         {
             InitializeComponent();
             for (int i = 0; i < GAME_ROW; i++)
@@ -191,12 +191,8 @@ namespace p_snake
         private void btnExit_Click(object sender, EventArgs e)
         {
             
-            btnExit.Enabled = false; 
-            //gmae_init();
-            //timer1.Enabled = true;
-            Main m = new Main();
-            m.Show();
-            this.SetVisibleCore(false);
+            btnExit.Enabled = false;
+            Event.FormClosed();
         }
 
         bool inside_snake(int mode, int x, int y)

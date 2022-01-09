@@ -121,10 +121,6 @@ namespace p_snake
              
 
             }
-            Main m = new Main();
-            m.Show();
-            //this.SetVisibleCore(false);
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -144,6 +140,11 @@ namespace p_snake
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Guess_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Event.FormClosed();
         }
 
         private void random_Num()

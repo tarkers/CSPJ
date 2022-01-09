@@ -16,73 +16,23 @@ namespace p_snake
         public Main()
         {
             InitializeComponent();
-            string binPath = System.IO.Directory.GetParent(System.IO.Path.GetDirectoryName(Application.ExecutablePath)).ToString();
-           // System.Media.SoundPlayer sp = new System.Media.SoundPlayer($@"{binPath}\Startup.wav");
+
+            Sound.Set_Background();
             Event.main = this;
         }
   
         private void Main_Load(object sender, EventArgs e)
         {
-           // DB.testConnect();
-         //   DB.GetRecords(TABLENAME.TEGG);
-        }
-
-        private void btnSnake_Click(object sender, EventArgs e)
-        {
-            Sound.PressButton();
-            Snake frmsnake = new Snake(this);
-            frmsnake.Show();
-            this.SetVisibleCore(false);
-        }
-        private void btnTank_Click(object sender, EventArgs e)
-        {
-            Sound.PressButton();
-            Guess frmguess = new Guess();
-            frmguess.Show();
-            this.SetVisibleCore(false);
-        }
-        private void btnBlocks_Click(object sender, EventArgs e)
-        {
-            Sound.PressButton();
-            Blocks frmblocks = new Blocks();
-            frmblocks.Show();
-            this.SetVisibleCore(false);
-        }
-
-        private void btnRanking_Click(object sender, EventArgs e)
-        {
-            Sound.PressButton();
-            Ranking frmranking = new Ranking();
-            frmranking.Show();
-            this.SetVisibleCore(false);
-        }
-        private void btnCar_Click(object sender, EventArgs e)
-        {
-            Sound.PressButton();
-            CarRace frmcar = new CarRace();
-            frmcar.Show();
-            this.SetVisibleCore(false);
+            center_panel.BackColor = Color.FromArgb(150,0, 0, 0);
+            center_panel.Left = (this.Width - center_panel.Width) / 2 ;
+            center_panel.Top = (this.Height - center_panel.Height) / 2;
         }
         public void BacktoMain()
         {
             this.SetVisibleCore(true);
         }
 
-        private void btnBalloon_Click(object sender, EventArgs e)
-        {
-            Sound.PressButton();
-            ShootBalloon frmballoon = new ShootBalloon();
-            frmballoon.Show();
-            this.SetVisibleCore(false);
-        }
 
-        private void btnEgg_Click(object sender, EventArgs e)
-        {
-            Sound.PressButton();
-            Egg frmegg = new Egg();
-            frmegg.Show();
-            this.SetVisibleCore(false);
-        }
 
         private void nameCheckB_Click(object sender, EventArgs e)
         {
@@ -91,6 +41,47 @@ namespace p_snake
             userHelloT.Text = $"{usertextbox.Text} ";
         }
 
+      
+
+        private void btnClick(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            Sound.PressButton();
+            Console.WriteLine(btn.Name);
+            switch (btn.Name)
+            {
+                case "btnEgg":               
+                    Egg frmegg = new Egg();
+                    frmegg.Show();             
+                    break;
+                case "btnBalloon":
+                    ShootBalloon frmballoon = new ShootBalloon();
+                    frmballoon.Show();
+                    break;
+                case "btnCar":
+                    CarRace frmcar = new CarRace();
+                    frmcar.Show();
+                    break;
+                case "btnBlocks":
+                    Blocks frmblocks = new Blocks();
+                    frmblocks.Show();
+                    break;
+                case "btnTank":
+                    Guess frmguess = new Guess();
+                    frmguess.Show();
+                    break;
+                case "btnSnake":
+                    Snake frmsnake = new Snake();
+                    frmsnake.Show();
+                    break;
+                case "btnRanking":
+                    Ranking frmranking = new Ranking();
+                    frmranking.Show();
+                    break;
+            }
+            Sound.SetBackgroundVolume(35);
+            this.SetVisibleCore(false);
+        }
         private void mouseEnter(object sender, EventArgs e)
         {
             Sound.PlayMouseOver();
